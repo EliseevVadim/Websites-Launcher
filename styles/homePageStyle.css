@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "montserratBold";
+  src: local(montserrat), url("/fonts/montserrat/Montserrat-ExtraBold.otf");
+}
+@font-face {
+  font-family: "montserrat";
+  src: local(montserrat), url("/fonts/montserrat/Montserrat-Bold.otf");
+}
+@font-face {
+  font-family: "regularMonserrat";
+  src: local(montserrat), url("/fonts/montserrat/Montserrat-Regular.otf");
+}
+body {
+  background-color: #4a4a4a;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 52px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 10%;
+  background: #141414;
+  padding: 10px 20px 5px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.header .logo {
+  width: 350px;
+  height: 80%;
+  background-color: inherit;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 5px;
+}
+.header .logo a {
+  width: inherit;
+  height: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  text-decoration: none;
+}
+.header .logo a img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+.header .logo a span {
+  padding: 5px;
+  text-indent: 5px;
+  font-size: 25px;
+  font-family: montserratBold;
+  align-self: center;
+  color: white;
+  font-style: normal;
+  width: inherit;
+}
+.header .menu {
+  height: 80%;
+  padding-right: 200px;
+}
+.header .menu ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.header .menu ul .menuItem {
+  display: inline-block;
+  background-color: inherit;
+  padding: 5px;
+  margin: 15px;
+}
+.header .menu ul .menuItem a {
+  display: block;
+  text-decoration: none;
+  font-family: montserrat;
+  color: white;
+}
+.header .menu ul ul {
+  display: none;
+  position: absolute;
+  top: 78%;
+}
+.header .menu ul ul li {
+  background: #4c791e;
+  min-width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+.header .menu ul ul li a {
+  font-family: regularMonserrat !important;
+}
+.header .menu ul ul li:hover {
+  background: #2b460f;
+}
+.header .menu ul .menuItem:hover > ul {
+  display: inherit;
+}
+.header .menu ul .menuItem:hover {
+  cursor: pointer;
+  background: #0dc40d;
+}
+
+/*# sourceMappingURL=homePageStyle.css.map */

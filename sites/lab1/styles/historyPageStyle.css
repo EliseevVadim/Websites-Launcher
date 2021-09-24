@@ -1,0 +1,47 @@
+body {
+    background-color: burlywood;
+}
+h1 {
+    text-align: center;
+    margin: 0px;
+    color: blue;
+    font-family: Broadway;
+    font-size: 40px;
+    font-style: italic;
+}
+h2 {
+    text-align: center;
+    margin: 0px;
+    font-size: 14px;
+    color: #467c0a;
+}
+h4 {
+    font-size: 18px;
+    font-family: Verdana;
+    font-style: italic;
+    font-weight: bold;
+}
+.mainPageImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 0px;
+    align: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    cursor: pointer;
+}
+.tableCellInformation {
+    color: darkblue;
+    text-align: left;
+    text-indent: 25px;
+}
+.leftSidedImage {
+    float: left;
+    margin: 7px 7px 7px 5px;
+}
+.rightSidedImage {
+    float: right;
+    margin:  7px 5px 7px 7px;
+}

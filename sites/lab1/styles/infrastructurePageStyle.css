@@ -1,0 +1,70 @@
+body {
+    background-color: #95b5f5;
+}
+h1 {
+    text-align: center;
+    margin: 0px;
+    color: blue;
+    font-family: Broadway;
+    font-size: 40px;
+    font-style: italic;
+}
+h5 {
+    text-align: center;
+    color: #467c0a;
+    margin: 0px;
+    font-size: 14px;
+}
+.mainPageImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 0px;
+    align: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    cursor: pointer;
+}
+h6 {
+    text-align: center;
+    font-size: 26px;
+    font-style: italic;
+    margin: 0px;
+}
+figure {
+    text-align: center;
+}
+figcaption {
+    font-weight: bold;
+    font-style: italic;
+    font-family: Candara;
+}
+p {
+    text-indent: 25px;
+}
+h2 {
+    text-align: center;
+    color: darkgreen;
+    font-size: 24px
+}
+h3 {
+    color: #467c0a;
+}
+article {
+    text-align: center;
+    width: 63%;
+}
+.administrativeTable {
+    background-color: #eab297ff;
+}
+h4 {
+    font-size: 20px;
+    font-family: Verdana;
+    text-indent: 25px;
+}
+.coordinatesTable {
+    display: inline-block;
+    background-color: white;
+    vertical-align: top;
+}

@@ -1,0 +1,51 @@
+h1 {
+    text-align: center;
+    margin: 0px;
+    color: #e2e2e3;
+    font-family: Broadway;
+    font-size: 40px;
+    font-style: italic;
+}
+h2 {
+    text-align: center;
+    margin: 0px;
+    font-size: 14px;
+    color: #467c0a;
+}
+body {
+    background-color: #aa78d7;
+}
+.mainPageImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 0px;
+    align: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    cursor: pointer;
+}
+.card {
+    height: fit-content;
+    width: 100%;
+    background-color: #7640a6;;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.card:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.8);
+}
+.container {
+    padding: 2px 16px;
+}
+.container h4 {
+    text-align: center;
+    margin-top: 0px;
+}
+summary:hover {
+    cursor: pointer;
+}
+details p {
+    color: #dfbdff;
+}

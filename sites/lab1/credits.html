@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Форма обратной связи с разработчиком</title>
+    <link rel="stylesheet" href="styles/creditsPageStyle.css">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Coat_of_Arms_of_Khartsyzk.svg/1200px-Coat_of_Arms_of_Khartsyzk.svg.png">
+</head>
+<body>
+    <div>
+        <h1>Форма обратной связи с разработчиком</h1>
+        <h2>Оставьте свои предложения/пожелания/рекомендации здесь</h2>
+        <a href="index.html">
+            <img src="https://sun6-20.userapi.com/s/v1/ig2/sP5wqoOivLP7Iqm0_XenjW5w8TF18BXc-8gkFVnEEZmZ8y28B59IapYyHeTelIhffXaQAS24w1ZwGkdqm-aMQpmb.jpg?size=400x0&quality=96&crop=96,0,720,720&ava=1"
+                                  class="mainPageImage" title="На главную"></a>
+    </div>
+    <br>
+    <br>
+    <h3>Заполните форму для отправки обращения разработчику сайта</h3>
+    <form action="scripts/sendMessage.php" method="post">
+        <fieldset>
+            <legend>Введите свои контактные данные:</legend>
+            <label>Имя<sup>*</sup>:</label>
+            <input type="text" name="name" placeholder="Укажите свое имя...">
+            <br>
+            <label>Фамилия<sup>*</sup>:</label>
+            <input type="text" name="surname" placeholder="Укажите свою фамилию...">
+            <br>
+            <label>Электронный адрес<sup></sup>:</label>
+            <input type="text" name="email-address" required>
+            <input list="domains" required placeholder="Введите домен" name="email-domain">
+            <datalist id="domains" >
+                <option value="@mail.ru">
+                <option value="@gmail.com">
+                <option value="@yandex.ru">
+                <option value="@bk.ru">
+                <option value="@outlook.com">
+                <option value="@yahoo.com">
+            </datalist>
+            <hr>
+            <footer>
+                <strong>Замечание: </strong>
+                Поля, помеченные звездочкой<sup>*</sup> не являются обязательными для заполнения
+            </footer>
+        </fieldset>
+        <h3>Введите Ваше сообщение:</h3>
+        <textarea name="message" rows="50" cols="10" placeholder="Введите ваше сообщение сюда..."></textarea>
+        <br>
+        <br>
+        <center>
+            <button>Отправить</button>
+        </center>
+    </form>
+    <section>
+        <h4><mark>Оставить фидбек</mark></h4>
+        <button type="button" onclick="window.location.href='https://github.com/EliseevVadim/Web-Course-5-Sem'">
+            <img src="https://e7.pngegg.com/pngimages/490/316/png-clipart-computer-icons-github-github-icon-cat-like-mammal-carnivoran.png"
+            width="20" height="20" align="center">
+            <span>Star</span>
+        </button>
+        <br>
+        <br>
+        <br>
+        <nav>
+            <a href="https://vk.com/lord_ajdis">VK</a> |
+            <a href="https://github.com/EliseevVadim">Github</a> |
+            <a href="mailto:eliseevv02@mail.ru">E-mail (для коммерческих запросов)</a>
+        </nav>
+    </section>
+</body>
+</html>
