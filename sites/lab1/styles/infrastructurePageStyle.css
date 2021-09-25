@@ -68,3 +68,6 @@ h4 {
     background-color: white;
     vertical-align: top;
 }
+summary:hover {
+    cursor: pointer;
+}
