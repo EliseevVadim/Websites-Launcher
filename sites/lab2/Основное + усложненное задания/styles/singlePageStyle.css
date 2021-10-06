@@ -149,4 +149,8 @@ main {
   text-decoration: none;
 }
 
+.input-group input {
+  border-radius: 40px;
+}
+
 /*# sourceMappingURL=singlePageStyle.css.map */

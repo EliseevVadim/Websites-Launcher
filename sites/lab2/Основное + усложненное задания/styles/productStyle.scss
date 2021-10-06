@@ -1,18 +1,3 @@
-.navbar-brand {
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
-.checkout-button {
-  transition: 1s;
-}
-.checkout-button:active  {
-  transform: rotate(360deg) !important;
-}
-main {
-  padding-top: 105px;
-}
 .nav-panel {
   height: 150px;
   background: #bba7a7;
@@ -32,56 +17,78 @@ main {
     }
   }
 }
-.slide-container {
-  background-color: #776464;
+.navbar-brand {
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
-.service-info {
-  background-color: white;
-  text-align: center;
-  position: relative;
-  top: -20px;
+.checkout-button {
+  transition: 1s;
+}
+.checkout-button:active  {
+  transform: rotate(360deg) !important;
+}
+main {
+  padding-top: 105px;
+}
+.newsletter-field {
+  height: 500px;
+  background: url('../images/subarea-back.avif');
+  p {
+    color: #133e88;
+    font-weight: 700;
+    font-style: italic;
+  }
+}
+.text-reset {
+  text-decoration: none;
+}
+.card-header {
   h1 {
-    padding-top: 60px;
-    font-weight: bold;
-    font-size: 30px;
-  }
-  h2 {
-    font-weight: bold;
-    color: black;
-    font-size: 24px;
-  }
-  span {
-    font-weight: bold;
-    font-size: 18px;
-    strong {
-      text-decoration: underline;
-      font-weight: 700;
+    a {
       color: black;
+      text-decoration: none;
+      font-size: 14px;
     }
   }
-  .price {
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: underline;
+}
+.title-mark {
+  position: relative;
+  top: 0;
+  left: -15px;
+  background: crimson;
+  width: 3%;
+  height: inherit;
+}
+.card-body {
+  ul {
+    list-style: none;
+    a {
+      color: black;
+      text-decoration: none;
+    }
   }
 }
-.labelled-control {
-  display: inline-grid;
+h2 {
+  color: #777373;
+  font-size: 20px;
+}
+nav {
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+.result-items {
   text-align: center;
-  span {
-    font-weight: 600;
-    font-size: 12px;
-  }
-}
-.feat-items {
-  padding: 60px;
   .feat-item {
     margin-bottom: 20px;
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
 
-    item-img {
+    .item-img {
       position: relative;
       overflow: hidden;
     }
@@ -116,6 +123,7 @@ main {
         font-weight: bold;
         font-size: 16px;
         margin-bottom: 5px;
+        color: black;
       }
       span {
         color: #945c87;
@@ -123,7 +131,6 @@ main {
       }
     }
   }
-
   .feat-item:hover {
     .possible-action {
       opacity: 1;
@@ -134,17 +141,12 @@ main {
     }
   }
 }
-.newsletter-field {
-  height: 500px;
-  background: url('../images/subarea-back.avif');
-  p {
-    color: #133e88;
-    font-weight: 700;
-    font-style: italic;
+.feat-message {
+  text-align: center;
+  color: white;
+  h3 {
+    color: crimson;
   }
-}
-.text-reset {
-  text-decoration: none;
 }
 .input-group {
   input {
