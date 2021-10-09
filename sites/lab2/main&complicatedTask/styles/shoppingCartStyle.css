@@ -100,4 +100,13 @@ h3 {
   color: #0f004c;
 }
 
+.search-field {
+  padding-right: 50px;
+}
+
+.input-group-append {
+  position: relative;
+  left: -50px;
+}
+
 /*# sourceMappingURL=shoppingCartStyle.css.map */

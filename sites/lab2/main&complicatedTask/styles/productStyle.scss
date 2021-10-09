@@ -119,6 +119,7 @@ nav {
       }
     }
     .feat-item-info {
+      padding: 10px;
       h2 {
         font-weight: bold;
         font-size: 16px;
@@ -152,4 +153,11 @@ nav {
   input {
     border-radius: 40px;
   }
+}
+.search-field {
+  padding-right: 50px;
+}
+.input-group-append {
+  position: relative;
+  left: -50px;
 }

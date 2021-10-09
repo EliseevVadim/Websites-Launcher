@@ -86,7 +86,7 @@
   border-radius: 5px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
 }
-.feat-items .feat-item item-img {
+.feat-items .feat-item .item-img {
   position: relative;
   overflow: hidden;
 }
@@ -115,6 +115,9 @@
 }
 .feat-items .feat-item .possible-action a:hover {
   cursor: pointer;
+}
+.feat-items .feat-item .feat-item-info {
+  padding: 10px;
 }
 .feat-items .feat-item .feat-item-info h2 {
   font-weight: bold;
@@ -216,4 +219,21 @@
   transform: rotate(360deg) !important;
 }
 
-/*# sourceMappingURL=mainPageStyle.css.map */
+.slider-image {
+  object-fit: cover;
+}
+
+.input-group-append {
+  position: relative;
+  left: -50px;
+}
+
+.search-field {
+  padding-right: 50px;
+}
+
+.test {
+  height: 60%;
+}
+
+/*# sourceMappingURL=indexPageStyle.css.map */

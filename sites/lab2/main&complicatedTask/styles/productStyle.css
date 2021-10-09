@@ -121,6 +121,9 @@ nav a {
 .result-items .feat-item .possible-action a:hover {
   cursor: pointer;
 }
+.result-items .feat-item .feat-item-info {
+  padding: 10px;
+}
 .result-items .feat-item .feat-item-info h2 {
   font-weight: bold;
   font-size: 16px;
@@ -149,6 +152,15 @@ nav a {
 
 .input-group input {
   border-radius: 40px;
+}
+
+.search-field {
+  padding-right: 50px;
+}
+
+.input-group-append {
+  position: relative;
+  left: -50px;
 }
 
 /*# sourceMappingURL=productStyle.css.map */

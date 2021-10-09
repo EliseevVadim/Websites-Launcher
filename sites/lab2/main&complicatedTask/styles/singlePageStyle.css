@@ -118,6 +118,9 @@ main {
 .feat-items .feat-item .possible-action a:hover {
   cursor: pointer;
 }
+.feat-items .feat-item .feat-item-info {
+  padding: 10px;
+}
 .feat-items .feat-item .feat-item-info h2 {
   font-weight: bold;
   font-size: 16px;
@@ -151,6 +154,15 @@ main {
 
 .input-group input {
   border-radius: 40px;
+}
+
+.search-field {
+  padding-right: 50px;
+}
+
+.input-group-append {
+  position: relative;
+  left: -50px;
 }
 
 /*# sourceMappingURL=singlePageStyle.css.map */
