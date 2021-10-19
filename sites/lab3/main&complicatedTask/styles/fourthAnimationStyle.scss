@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  background: #39fcfc;
+  height: 100%;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  main {
+    flex: 1 0 auto;
+    .switcher {
+      position: relative;
+      top: 100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      background: #81d081;
+      width: 350px;
+      height: 70px;
+      .arrow-block {
+        padding-left: 3px;
+        opacity: 1;
+        position: relative;
+        height: 65px;
+        width: 65px;
+        .arrow-top {
+          background: white;
+          position: absolute;
+          height: 5px;
+          top: calc(50% - 2.5px);
+          transform-origin: 0 0;
+          transform: rotate(-35deg);
+          width: 50px;
+        }
+        .arrow-bottom {
+          background: white;
+          position: absolute;
+          height: 5px;
+          top: calc(50% - 2.5px);
+          transform-origin: 0 0;
+          transform: rotate(35deg);
+          width: 50px;
+        }
+      }
+      .arrow-block[rel=common]:hover {
+        cursor: pointer;
+        .arrow-top {
+          animation-name: top-arrow-animation;
+          animation-duration: 10s;
+          animation-fill-mode: both;
+          animation-direction: alternate;
+        }
+        .arrow-bottom {
+          animation-name: bottom-arrow-animation;
+          animation-duration: 10s;
+          animation-fill-mode: both;
+          animation-direction: alternate;
+        }
+      }
+      .arrow-block[rel=disabled] {
+        animation-name: disable-arrow-block;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        .arrow-top {
+          animation-name: top-arrow-animation;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+        }
+        .arrow-bottom {
+          animation-name: bottom-arrow-animation;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+        }
+      }
+      .arrow-block[rel=enabled] {
+        animation-name: enable-arrow-block;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        .arrow-top {
+          animation-name: open-top-arrow-animation;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+        }
+        .arrow-bottom {
+          animation-name: open-bottom-arrow-animation;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+        }
+      }
+      .arrow-block[rel=initial] {
+        opacity: 0.5;
+        .arrow-top {
+          transform: rotate(0deg);
+        }
+        .arrow-bottom {
+          transform: rotate(0deg);
+        }
+      }
+      .content-block {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 45px;
+        height: 65px;
+        span {
+          color: white;
+          position: relative;
+          top: calc(50% - 12.5px);
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  footer {
+    flex: 0 0 auto;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      a {
+        font-size: 18px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+}
+@keyframes top-arrow-animation {
+  from {
+    transform: rotate(-35deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes bottom-arrow-animation {
+  from {
+    transform: rotate(35deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes disable-arrow-block {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+@keyframes enable-arrow-block {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes open-top-arrow-animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-35deg);
+  }
+}
+@keyframes open-bottom-arrow-animation {
+   from {
+     transform: rotate(0deg);
+   }
+   to {
+     transform: rotate(35deg);
+   }
+ }

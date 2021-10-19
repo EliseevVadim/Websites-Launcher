@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  background: lightgreen;
+  height: 100%;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  main {
+    flex: 1 0 auto;
+    .sky-button {
+      position: relative;
+      top: 100px;
+      width: 250px;
+      height: 90px;
+      background: lightblue;
+      border-radius: 100px 100px 100px 100px / 100% 100%;
+      margin: 0 auto;
+      border: 7px solid #8585ce;
+      overflow: hidden;
+      animation-name: buttonUpdate;
+      animation-duration: 3s;
+      animation-delay: 9s;
+      animation-fill-mode: forwards;
+      .sun {
+        background: yellow;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        top: 18%;
+        left: 72%;
+        border: 4px solid darkkhaki;
+        animation-name: moveSun, repaintSun;
+        animation-duration: 5s, 2s;
+        animation-delay: 0s, 5s;
+        animation-fill-mode: forwards;
+        .moonDots {
+          position: relative;
+          width: 35px;
+          height: 35px;
+          overflow: hidden;
+          opacity: 0;
+          top: 12%;
+          left: 12%;
+          animation-name: showDots;
+          animation-duration: 2s;
+          animation-delay: 5s;
+          animation-fill-mode: forwards;
+          .firstCircle {
+            position: relative;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            border: 2px solid #6b6a6a;
+            background: #b4b0b1;
+          }
+          .secondCircle {
+            position: relative;
+            width: 12px;
+            height: 12px;
+            left: 54%;
+            top: -33%;
+            border-radius: 50%;
+            border: 2px solid #6b6a6a;
+            background: #b4b0b1;
+          }
+          .thirdCircle {
+            position: relative;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            border: 2px solid #6b6a6a;
+            background: #b4b0b1;
+            top: -15%;
+            left: 45%;
+          }
+        }
+      }
+      .cloud {
+        position: relative;
+        display: flex;
+        border: 2px solid gray;
+        top: -6%;
+        left: 65%;
+        width: 40px;
+        height: 12px;
+        background: white;
+        overflow: no-display;
+        border-radius: 40%;
+        animation-name: moveCloud, hideCloud;
+        animation-duration: 5s, 2s;
+        animation-fill-mode: forwards;
+        animation-delay: 0s, 5s;
+      }
+      .cloud:before {
+        position: relative;
+        content: '';
+        width: 15px;
+        height: 15px;
+        border-top: inherit;
+        background: inherit;
+        border-radius: 50%;
+        top: -52%;
+        left: 20%;
+      }
+      .cloud:after {
+        position: relative;
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-top: inherit;
+        background: inherit;
+        border-radius: 50%;
+        top: -50%;
+        left: 10%;
+      }
+      .starsArea {
+        position: relative;
+        background: inherit;
+        width: 45%;
+        height: 58%;
+        top: -55%;
+        left: 60%;
+        opacity: 0;
+        animation-name: showStars;
+        animation-duration: 2s;
+        animation-delay: 7s;
+        animation-fill-mode: forwards;
+        .star {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background: white;
+          border-radius: 50%;
+        }
+      }
+    }
+    .sky-button:hover {
+      cursor: pointer;
+    }
+    .sky-button[rel=rollBack] {
+      animation-name: buttonUpdate;
+      animation-duration: 3s;
+      animation-direction: alternate-reverse;
+      animation-fill-mode: forwards;
+      .starsArea {
+        animation-name: showStars;
+        animation-delay: 3s;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-direction: alternate-reverse;
+      }
+      .sun {
+        animation-name: repaintSun, moveSun;
+        animation-delay: 5s, 7s;
+        animation-duration: 2s, 5s;
+        animation-direction: alternate-reverse;
+        animation-fill-mode: forwards;
+      }
+      .moonDots {
+        animation-name: showDots;
+        animation-delay: 5s;
+        animation-duration: 2s;
+        animation-direction: alternate-reverse;
+        animation-fill-mode: forwards;
+      }
+      .cloud {
+        animation-name: hideCloud, moveCloud;
+        animation-delay: 5s, 7s;
+        animation-duration: 2s, 5s;
+        animation-direction: alternate-reverse;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+  footer {
+    flex: 0 0 auto;
+    nav {
+      display: flex;
+      justify-content: center;
+      a {
+        font-size: 18px;
+      }
+    }
+  }
+}
+@keyframes moveSun {
+  from {
+    left: 72%;
+  }
+  to {
+    left: 10%;
+  }
+}
+@keyframes repaintSun{
+  from {
+    background: yellow;
+    border: 4px solid darkkhaki;
+  }
+  to {
+    background: #d5cdcd;
+    border: 4px solid #989898;
+  }
+}
+@keyframes hideCloud {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes moveCloud {
+  from {
+    left: 65%;
+  }
+  to {
+    left: 3%;
+  }
+}
+@keyframes showDots {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes showStars {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes buttonUpdate {
+  from {
+    background: lightblue;
+    border: 7px solid #8585ce;
+  }
+  to {
+    background: #444141;
+    border: 7px solid black;
+  }
+}

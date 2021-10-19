@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  background: bisque;
+  height: 100%;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    main {
+      flex: 1 0 auto;
+      .circle-area {
+        position: relative;
+        top: 100px;
+        display: flex;
+        justify-content: center;
+        background: white;
+        width: 350px;
+        height: 160px;
+        margin: 0 auto;
+        .circle {
+          width: 35px;
+          height: 35px;
+          background: rgb(57,30,153);
+          background: linear-gradient(97deg, blue 40%, red 55%);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+          position: relative;
+          top: calc(50% - 20px);
+          border-radius: 50%;
+        }
+        .circle#leftCircle, .circle#rightCircle {
+          transform-origin: top center;
+        }
+        .circle#leftCircle[rel=running] {
+          animation-name: left-ball-animation;
+          animation-direction: alternate;
+          animation-duration: 16s;
+        }
+        .circle#rightCircle[rel=running] {
+          animation-name: right-ball-animation;
+          animation-delay: 2s;
+          animation-direction: alternate;
+          animation-duration: 16s;
+        }
+      }
+    }
+    footer {
+      flex: 0 0 auto;
+      nav {
+        display: flex;
+        justify-content: space-between;
+        a {
+          font-size: 18px;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+}
+@keyframes left-ball-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  6.25% {
+    transform: rotate(120deg);
+  }
+  12.5% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  31.25% {
+    transform: rotate(90deg);
+  }
+  37.5% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  56.25% {
+    transform: rotate(60deg);
+  }
+  62.5% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  81.25% {
+    transform: rotate(30deg);
+  }
+  87.5% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes right-ball-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  6.25% {
+    transform: rotate(-120deg);
+  }
+  12.5% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  31.25% {
+    transform: rotate(-90deg);
+  }
+  37.5% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  56.25% {
+    transform: rotate(-60deg);
+  }
+  62.5% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  81.25% {
+    transform: rotate(-30deg);
+  }
+  87.5% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

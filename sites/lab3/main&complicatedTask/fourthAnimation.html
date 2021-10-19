@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=6.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Несколько css анимаций">
+    <link rel="stylesheet" href="styles/fourthAnimationStyle.css">
+    <title>Страница с CSS анимациями</title>
+</head>
+<body>
+    <div class="wrapper">
+        <main>
+            <div class="switcher">
+                <div class="arrow-block" id="leftArrow" rel="initial">
+                    <div class="arrow-top"></div>
+                    <div class="arrow-bottom"></div>
+                </div>
+                <div class="content-block">
+                    <span id="field">1</span>
+                    <span>/</span>
+                    <span>5</span>
+                </div>
+                <div class="arrow-block" style="transform: rotate(180deg)" id="rightArrow" rel="common">
+                    <div class="arrow-top"></div>
+                    <div class="arrow-bottom"></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <a href="index.html">Предыдущая</a>
+                <a href="fifthAnimation.html">Следующая</a>
+            </nav>
+        </footer>
+    </div>
+    <script src="scripts/fourthAnimationScript.js"></script>
+</body>
+</html>

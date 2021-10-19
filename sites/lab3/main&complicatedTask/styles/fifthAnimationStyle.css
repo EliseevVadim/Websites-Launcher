@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: bisque;
+  height: 100%;
+}
+html .wrapper, body .wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+html .wrapper main, body .wrapper main {
+  flex: 1 0 auto;
+}
+html .wrapper main .circle-area, body .wrapper main .circle-area {
+  position: relative;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  background: white;
+  width: 350px;
+  height: 160px;
+  margin: 0 auto;
+}
+html .wrapper main .circle-area .circle, body .wrapper main .circle-area .circle {
+  width: 35px;
+  height: 35px;
+  background: #391e99;
+  background: linear-gradient(97deg, blue 40%, red 55%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  top: calc(50% - 20px);
+  border-radius: 50%;
+}
+html .wrapper main .circle-area .circle#leftCircle, html .wrapper main .circle-area .circle#rightCircle, body .wrapper main .circle-area .circle#leftCircle, body .wrapper main .circle-area .circle#rightCircle {
+  transform-origin: top center;
+}
+html .wrapper main .circle-area .circle#leftCircle[rel=running], body .wrapper main .circle-area .circle#leftCircle[rel=running] {
+  animation-name: left-ball-animation;
+  animation-direction: alternate;
+  animation-duration: 16s;
+}
+html .wrapper main .circle-area .circle#rightCircle[rel=running], body .wrapper main .circle-area .circle#rightCircle[rel=running] {
+  animation-name: right-ball-animation;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-duration: 16s;
+}
+html .wrapper footer, body .wrapper footer {
+  flex: 0 0 auto;
+}
+html .wrapper footer nav, body .wrapper footer nav {
+  display: flex;
+  justify-content: space-between;
+}
+html .wrapper footer nav a, body .wrapper footer nav a {
+  font-size: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@keyframes left-ball-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  6.25% {
+    transform: rotate(120deg);
+  }
+  12.5% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  31.25% {
+    transform: rotate(90deg);
+  }
+  37.5% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  56.25% {
+    transform: rotate(60deg);
+  }
+  62.5% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  81.25% {
+    transform: rotate(30deg);
+  }
+  87.5% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes right-ball-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  6.25% {
+    transform: rotate(-120deg);
+  }
+  12.5% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  31.25% {
+    transform: rotate(-90deg);
+  }
+  37.5% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  56.25% {
+    transform: rotate(-60deg);
+  }
+  62.5% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  81.25% {
+    transform: rotate(-30deg);
+  }
+  87.5% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/*# sourceMappingURL=fifthAnimationStyle.css.map */
