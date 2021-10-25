@@ -1,0 +1,174 @@
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
+}
+
+.checkout-button {
+  transition: 1s;
+}
+
+@media screen and (max-width: 423px) {
+  .right-button-group {
+    margin-top: 5px;
+    justify-content: left !important;
+  }
+}
+.checkout-button:active {
+  transform: rotate(360deg) !important;
+}
+
+main {
+  padding-top: 105px;
+}
+
+.nav-panel {
+  height: 150px;
+  background: #bba7a7;
+}
+.nav-panel p {
+  position: relative;
+  margin-left: 20%;
+  margin-top: 5%;
+  color: crimson;
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav-panel p a {
+  color: black;
+  text-decoration: none;
+}
+.nav-panel p a:active {
+  color: crimson;
+}
+
+.slide-container {
+  background-color: #776464;
+}
+
+.service-info {
+  background-color: white;
+  text-align: center;
+  position: relative;
+  top: -20px;
+}
+.service-info h1 {
+  padding-top: 60px;
+  font-weight: bold;
+  font-size: 30px;
+}
+.service-info h2 {
+  font-weight: bold;
+  color: black;
+  font-size: 24px;
+}
+.service-info span {
+  font-weight: bold;
+  font-size: 18px;
+}
+.service-info span strong {
+  text-decoration: underline;
+  font-weight: 700;
+  color: black;
+}
+.service-info .price {
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.labelled-control {
+  display: inline-grid;
+  text-align: center;
+}
+.labelled-control span {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.feat-items {
+  padding: 60px;
+}
+.feat-items .feat-item {
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+}
+.feat-items .feat-item item-img {
+  position: relative;
+  overflow: hidden;
+}
+.feat-items .feat-item .possible-action {
+  position: relative;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  background-color: black;
+  width: inherit;
+  height: inherit;
+}
+.feat-items .feat-item .possible-action a {
+  color: white;
+  transition: color 0.3s;
+  margin: 0 3px;
+  padding-top: 7px;
+  border-radius: 4px;
+  width: inherit;
+  height: inherit;
+  background: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+.feat-items .feat-item .possible-action a:hover {
+  cursor: pointer;
+}
+.feat-items .feat-item .feat-item-info {
+  padding: 10px;
+}
+.feat-items .feat-item .feat-item-info h2 {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.feat-items .feat-item .feat-item-info span {
+  color: #945c87;
+  font-size: 14px;
+}
+.feat-items .feat-item:hover .possible-action {
+  opacity: 1;
+  bottom: 55px;
+}
+.feat-items .feat-item:hover .img-fluid {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.newsletter-field {
+  height: 500px;
+  background: url("../images/subarea-back.avif");
+}
+.newsletter-field p {
+  color: #133e88;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.text-reset {
+  text-decoration: none;
+}
+
+.input-group input {
+  border-radius: 40px;
+}
+
+.search-field {
+  padding-right: 50px;
+}
+
+.input-group-append {
+  position: relative;
+  left: -50px;
+}
+
+/*# sourceMappingURL=singlePageStyle.css.map */

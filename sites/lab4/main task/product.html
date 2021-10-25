@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=6.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Информация об услугах автосервиса">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/productStyle.css">
+    <title>Просмотр услуг</title>
+</head>
+<body>
+    <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <form action="#" class="d-flex">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Browse
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-header" href="#">Простые услуги</a></li>
+                                        <li><a class="dropdown-item" href="#">Ремонт</a></li>
+                                        <li><a class="dropdown-item" href="#">Технический осмотр</a></li>
+                                        <li><a class="dropdown-item" href="#">Замена деталей</a></li>
+                                        <li><a class="dropdown-item" href="#">Прочее</a></li>
+                                        <li class="dropdown-divider"></li>
+                                        <li><a class="dropdown-header" href="#">ВИП-услуги</a></li>
+                                        <li><a class="dropdown-item" href="single-page.html">Авто-тюнинг</a></li>
+                                        <li><a class="dropdown-item" href="#">Замена деталей</a></li>
+                                        <li><a class="dropdown-item" href="#">Косметические улучшения</a></li>
+                                        <li><a class="dropdown-item" href="#">Прочее</a></li>
+                                    </ul>
+                                </div>
+                                <input type="search" class="form-control search-field" placeholder="Search for item...">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col d-flex justify-content-end right-button-group">
+                            <button class="btn btn-dark checkout-button" onclick="window.location.href='shopping-cart.html'">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                                </svg>
+                            </button>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Аккаунт
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">Сменить</a></li>
+                                    <li><a class="dropdown-item" href="#">Настройки</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Выйти</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link">Главная</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="product.html" class="nav-link">Услуги</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Контакты</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+    <main>
+        <section class="container-fluid p-0">
+            <div class="d-flex nav-panel">
+                <div class="row d-flex w-100">
+                    <div class="col-md-6">
+                        <p>НОВИНКИ</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <a href="index.html">Главная/</a>
+                            <a href="#">Услуги/</a>
+                            <a href="#" style="color: crimson">Новинки</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card pb-3">
+                        <div class="card-header d-flex" role="tabpanel" id="partOne">
+                            <div class="title-mark"></div>
+                            <h1 class="card-title">
+                                <a data-bs-toggle="collapse" data-parent="#billing-area" href="#detailsOne"
+                                   aria-expanded="true" aria-controls="detailsOne">
+                                    Виды услуг
+                                </a>
+                            </h1>
+                        </div>
+                        <div id="detailsOne" class="collapse show" role="tabpanel" aria-labelledby="partOne">
+                            <div class="card-body">
+                                <ul>
+                                    <li class="pb-2"><a href="#">Диагностика</a></li>
+                                    <li class="pb-2"><a href="single-page.html">Авто-тюнинг</a></li>
+                                    <li class="pb-2"><a href="#">Ремонт</a></li>
+                                    <li class="pb-2"><a href="#">Замена запчастей</a></li>
+                                    <li class="pb-2"><a href="#">Прочее</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card pb-3">
+                        <div class="card-header d-flex" role="tabpanel" id="partTwo">
+                            <div class="title-mark"></div>
+                            <h1 class="card-title">
+                                <a class="collapsed" data-bs-toggle="collapse" data-parent="#faq" href="#detailsTwo"
+                                   aria-expanded="false" aria-controls="detailsTwo">
+                                    Специальные предложения
+                                </a>
+                            </h1>
+                        </div>
+                        <div id="detailsTwo" class="collapse" role="tabpanel" aria-labelledby="partTwo">
+                            <div class="card-body">
+                                <ul>
+                                    <li class="pb-2"><a href="#">30%-ная скидка на все тюнинговые услуги</a></li>
+                                    <li class="pb-2"><a href="#">20%-ная скидка на диагностику автомобиля</a></li>
+                                    <li class="pb-2"><a href="#nf">Получать информацию о скидках первым</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card pb-3">
+                        <div class="card-header d-flex" role="tabpanel" id="partThree">
+                            <div class="title-mark"></div>
+                            <h1 class="card-title">
+                                <a class="collapsed" data-bs-toggle="collapse" data-parent="#billing-area"
+                                   href="#detailsThree" aria-expanded="true" aria-controls="detailsThree">
+                                    Программа лояльности
+                                </a>
+                            </h1>
+                        </div>
+                        <div id="detailsThree" class="collapse in" role="tabpanel" aria-labelledby="partThree">
+                            <div class="card-body">
+                                <ul>
+                                    <li class="pb-2"><a href="#">Услуги за скидкой для нескольких человек</a></li>
+                                    <li class="pb-2"><a href="#">Бонусы за покупки дороже определенной суммы</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h2>Популярное</h2>
+                            <nav>
+                                <a href="#">Покраска авто</a> |
+                                <a href="#">Установка обвеса</a> |
+                                <a href="#">Установка брызговиков</a> |
+                                <a href="#">Антихром автомобиля</a> |
+                                <a href="#">Установка защитной сетки</a> |
+                                <a href="#">Установка накладок</a>
+                            </nav>
+                        </div>
+                        <div class="col-md-4">
+                            <h2>Дополнительные условия</h2>
+                            <div class="row d-flex">
+                                <div class="form-check-inline">
+                                    <input type="checkbox" class="form-check-input filled-in" id="fast">
+                                    <label class="form-check-label small text-uppercase card-link-secondary" for="fast">
+                                        Быстрое выполнение
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="checkbox" class="form-check-input filled-in" id="chat">
+                                    <label class="form-check-label small text-uppercase card-link-secondary" for="chat">
+                                        Чат с оператором
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="checkbox" class="form-check-input filled-in" id="discounts">
+                                    <label class="form-check-label small text-uppercase card-link-secondary" for="discounts">
+                                        Наличие скидок
+                                    </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="checkbox" class="form-check-input filled-in" id="bonuses">
+                                    <label class="form-check-label small text-uppercase card-link-secondary" for="bonuses">
+                                        Наличие бонусов
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h2>Цена</h2>
+                            <input class="form-range" type="range" min="0" max="30000" aria-label="prices">
+                            <div class="d-flex justify-content-left">
+                                <span>0 ₽</span>
+                                <span style="margin-left: auto; order: 2">30 000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex mt-3" style="background: #a29f9f">
+                        <div class="col-md-6">
+                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                <button type="button" class="btn btn-light">Сортировать:</button>
+                                <div class="btn-group" role="group">
+                                    <select class="form-select" name="sort-options" id="sort-options">
+                                        <option selected>Имя</option>
+                                        <option value="1">Цена</option>
+                                        <option value="2">Рейтинг</option>
+                                        <option value="3">Среднее время выполнения</option>
+                                        <option value="4">Размер скидки</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                <button type="button" class="btn btn-light">Показать:</button>
+                                <div class="btn-group" role="group">
+                                    <select class="form-select" name="display-options" id="display-options">
+                                        <option selected>09</option>
+                                        <option value="1">08</option>
+                                        <option value="2">07</option>
+                                        <option value="3">06</option>
+                                        <option value="4">05</option>
+                                        <option value="5">04</option>
+                                        <option value="6">03</option>
+                                        <option value="7">02</option>
+                                        <option value="8">01</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex mt-3 result-items">
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="feat-item">
+                                <div class="item-img">
+                                    <img class="img-fluid" src="images/cond-renew.avif" alt="engine fix">
+                                    <div class="possible-action">
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                            </svg>
+                                            Добавить в заказ
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="feat-item-info">
+                                    <h2>Заправка кондиционера</h2>
+                                    <span>2 000 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="feat-item">
+                                <div class="item-img">
+                                    <img class="img-fluid" src="images/painting.avif" alt="paint">
+                                    <div class="possible-action">
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                            </svg>
+                                            Добавить в заказ
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="feat-item-info">
+                                    <h2>Покраска авто</h2>
+                                    <span>Договорная</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="feat-item">
+                                <div class="item-img">
+                                    <img class="img-fluid" src="images/check.avif" alt="check radiator">
+                                    <div class="possible-action">
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                            </svg>
+                                            Добавить в заказ
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="feat-item-info">
+                                    <h2>Технический осмотр автомобиля</h2>
+                                    <span>480 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="feat-item">
+                                <div class="item-img">
+                                    <img class="img-fluid" src="images/pomp.avif" alt="check conditioner">
+                                    <div class="possible-action">
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                            </svg>
+                                            Добавить в заказ
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="feat-item-info">
+                                    <h2>Замена помпы</h2>
+                                    <span>700 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="feat-item">
+                                <div class="item-img">
+                                    <img class="img-fluid" src="images/clutches.avif" alt="cleaning of cond">
+                                    <div class="possible-action">
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                            </svg>
+                                            Добавить в заказ
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="feat-item-info">
+                                    <h2>Замена сцепления</h2>
+                                    <span>от 4 500 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="feat-item">
+                                <div class="item-img">
+                                    <img class="img-fluid" src="images/handbrake.avif" alt="hose fix">
+                                    <div class="possible-action">
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                            </svg>
+                                            Добавить в заказ
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="feat-item-info">
+                                    <h2>Замена троса ручного тормоза</h2>
+                                    <span>1 000 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="feat-item">
+                                <div class="item-img">
+                                    <img class="img-fluid" src="images/node-change.avif" alt="liquid fix">
+                                    <div class="possible-action">
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                            </svg>
+                                            Добавить в заказ
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="feat-item-info">
+                                    <h2>Замена педального узла</h2>
+                                    <span>1 800 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="feat-item">
+                                <div class="item-img">
+                                    <img class="img-fluid" src="images/fuel-cleaning.avif" alt="heat fix">
+                                    <div class="possible-action">
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                            </svg>
+                                            Добавить в заказ
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="feat-item-info">
+                                    <h2>Очистка топливной системы </h2>
+                                    <span>1 100 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="feat-item">
+                                <div class="item-img">
+                                    <img class="img-fluid" src="images/light.avif" alt="heat fix">
+                                    <div class="possible-action">
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                            </svg>
+                                            Добавить в заказ
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="feat-item-info">
+                                    <h2>Замена плафона освещения салона</h2>
+                                    <span>500 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex mt-3 d-flex justify-content-center">
+                        <div class="col-md-6">
+                            <nav aria-label="...">
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">6...20</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-outline-danger" type="button" style="position: relative; float: right">
+                                Просмотреть все
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="container-fluid">
+            <div class="row d-flex justify-content-center pt-5 bg-dark">
+                <div class="col-md-4 feat-message">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>
+                        <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>
+                        <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"/>
+                        <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>
+                    </svg>
+                    <h3>Выгодная цена</h3>
+                    <p>Только на этой неделе действует 30%-ная скидка на все услуги, связанные с тюнингом авто.
+                        Успейте улучшить свою машину и приятно сэкономить.</p>
+                </div>
+                <div class="col-md-4 feat-message">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+                        <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                    </svg>
+                    <h3>Программа лояльности</h3>
+                    <p>При заказе выше 6 000 рублей мы бесплатно проведем базовую диагностику Вашего
+                        автомобиля. Также вы можете привести с собой 3х друзей, и тогда двоим будет проведена
+                        бесплатная диагностика, а Вам выдан купон на 1 000 рублей. Данное предложение действует
+                        в случае суммарного заказа, превышающего 12 000 рублей.</p>
+                </div>
+                <div class="col-md-4 feat-message">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
+                        <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"/>
+                        <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"/>
+                    </svg>
+                    <h3>Ограниченное предложение</h3>
+                    <p>Спеши! Данная акция длится всего неделю! Не упусти свой шанс!</p>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter-field mt-2 mb-2" id="nf">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 pt-5">
+                        <div class="col-2 col-lg-2">
+                            <img src="images/pic.avif" alt="alt" class="img-fluid" style="border-radius: 50%">
+                        </div>
+                        <div class="text-area">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloremque doloribus
+                                nemo non sit tenetur."</p>
+                            <p>Цицерон</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 pt-5" style="  position: relative; top: 15px;">
+                        <div class="thumbnail center well well-sm text-center">
+                            <h2>Подпишитесь</h2>
+                            <p>Для того чтобы получать актуальную информацию первым. Мы гарантируем Вам не
+                                рассылать спам</p>
+                            <form action="" method="post" role="form">
+                                <div class="input-group">
+                                    <input class="form-control" type="email" placeholder="Введите своей e-mail" required>
+                                    <input type="submit" value="Подписаться" class="btn btn-large btn-danger"/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <section class="footer-info">
+            <div class="container text-center text-md-start">
+                <div class="row">
+                    <div class="col-md-3 col-lg-4 col-xl-3 x-auto mb-4">
+                        <img src="images/logo.png" alt="alt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto aspernatur explicabo
+                            illum incidunt minima neque numquam quas quo sed, sequi similique sint, sunt ut voluptates?
+                            Asperiores atque ducimus laudantium.</p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase text-danger fw-bold mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
+                                <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
+                            </svg>
+                            Компания
+                        </h6>
+                        <p>
+                            <a href="#" class="text-reset">Главная</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">Услуги</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">О нас</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">FAQ</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">Связаться с нами</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase text-danger fw-bold mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                            </svg>
+                            Полезная информация
+                        </h6>
+                        <p><a href="#" class="text-reset">Пользовательское соглашение</a></p>
+                        <p><a href="#" class="text-reset">Политика конфиденциальности</a></p>
+                        <p><a href="#" class="text-reset">Как заказать услугу</a></p>
+                        <p><a href="#" class="text-reset">Программы лояльности</a></p>
+                        <p><a href="#" class="text-reset">Специальные предложения</a></p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase text-danger fw-bold mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+                                <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                                <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                            Категории услуг
+                        </h6>
+                        <p><a href="#" class="text-reset">Диагностика авто</a></p>
+                        <p><a href="#" class="text-reset">Косметические услуги</a></p>
+                        <p><a href="#" class="text-reset">Ремонт</a></p>
+                        <p><a href="#" class="text-reset">Замена запчастей</a></p>
+                        <p><a href="#" class="text-reset">Другие</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="d-flex justify-content-center justify-content-lg-between p-4"
+                 style="background: rgba(0, 0, 0, 0.09)">
+            <div class="me-5 d-none d-lg-block">
+                <span>© 2021 Автосервис N: All rights reserved</span>
+            </div>
+            <div>
+                <a href="#" class="me-4 text-reset" aria-label="facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                </a>
+                <a href="#" class="me-4 text-reset" aria-label="twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                </a>
+                <a href="#" class="me-4 text-reset" aria-label="google">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                        <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                    </svg>
+                </a>
+                <a href="#" class="me-4 text-reset" aria-label="inst">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/EliseevVadim" class="me-4 text-reset" aria-label="git">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
