@@ -1,0 +1,180 @@
+body {
+  background: #323232;
+}
+.main-block {
+  position: absolute;
+  left: 25%;
+  margin: 0 auto;
+  top: 10%;
+  background: #a29f9f;
+  width: 50%;
+  box-shadow: 0 0 10px black;
+  header {
+    #most-top {
+      left: 50%;
+      .nav-item {
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+    #logo-part {
+      background: rgb(120,115,116);
+      background: linear-gradient(180deg, rgba(120,115,116,1) 22%, rgba(69,65,66,1) 49%, rgba(48,44,44,1) 80%);
+      .company-name {
+        position: relative;
+        top: calc(50% - 12px);
+        font-size: 24px;
+        color: #7c7878;
+        font-weight: bold
+      }
+    }
+    @media screen and (max-width: 420px){
+      .company-name {
+        top: 5% !important;
+      }
+    }
+    h1 {
+      font-weight: bold;
+      font-size: 28px;
+    }
+    .details-button {
+      color: yellow;
+      font-weight: bolder;
+      background: rgb(152,150,151);
+      background: linear-gradient(180deg, rgba(152,150,151,1) 41%, rgba(25,24,24,1) 59%);
+    }
+  }
+  .feat-item {
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+    .item-img {
+      position: relative;
+      overflow: hidden;
+    }
+    .feat-item-info {
+      padding: 10px;
+      h2 {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: white;
+      }
+      span {
+        font-size: 14px;
+        color: black;
+      }
+      a {
+        color: #ffed1a;
+        font-weight: bolder;
+      }
+    }
+  }
+  .badged-image {
+    display: inline-block;
+    position: relative;
+  }
+  .notify-badge{
+    position: absolute;
+    left: 0;
+    top: -5%;
+    background: red;
+    text-align: left;
+    padding: 5px 10px;
+    font-size: 20px;
+    z-index: 10;
+    width: 50%;
+    clip-path: polygon(50% 35%, 0% 100%, 100% 100%);
+    transform-origin: left bottom;
+    transform: rotate(-45deg);
+    height: 50%;
+    span {
+      color: white;
+      position: relative;
+      top: 65%;
+      margin: auto;
+      left: calc(50% - 3vw);
+      font-size: 1.5vw;
+      font-weight: bolder;
+    }
+    p {
+      color: white;
+      position: relative;
+      top: 65%;
+      margin: auto;
+      left: calc(50% - 3vw);
+      font-size: 1.5vw;
+      font-weight: bolder;
+    }
+  }
+  @media screen and (max-width: 650px){
+    .notify-badge {
+      span {
+        top: 50%;
+      }
+      p {
+        top: 50%;
+      }
+    }
+  }
+  @media screen and (max-width: 400px){
+    .notify-badge {
+      span {
+        top: 40%;
+      }
+      p {
+        top: 40%;
+      }
+    }
+  }
+  @media screen and (max-width: 335px){
+    .notify-badge {
+      span {
+        top: 30%;
+      }
+      p {
+        top: 30%;
+      }
+    }
+  }
+  .large-text {
+    background: black;
+    color: #a29f9f;
+    span {
+      text-align: justify;
+      font-size: 6.6vw;
+      width: 100%;
+      margin: 0 !important;
+      padding: 0 !important;
+      white-space: nowrap;
+    }
+    span::after {
+      content: "Не пропустите!";
+      color: white;
+      font-weight: bolder;
+      font-style: italic;
+      font-size: 2.5vw;
+      position: relative;
+      left: calc(-8vw - 50%);
+      top: -1.25vw;
+    }
+  }
+  footer {
+    nav {
+      a {
+        color: white;
+      }
+      span {
+        font-weight: bolder;
+      }
+    }
+    .bottom-line {
+      color: transparent;
+      background-color: black;
+      background-image: repeating-linear-gradient(-45deg, transparent, transparent 25px, rgba(255,255,255,.5) 25px, rgba(255,255,255,.5) 50px);
+    }
+  }
+}

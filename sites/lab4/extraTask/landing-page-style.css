@@ -1,0 +1,429 @@
+.slider-picture {
+  object-fit: cover;
+}
+
+.navbar {
+  z-index: 10;
+}
+
+#carouselExampleCaptions {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+  main {
+    margin-top: 46vh !important;
+  }
+
+  .carousel-item {
+    height: 65vh;
+  }
+
+  .carousel-caption {
+    top: 15vh !important;
+  }
+
+  .carousel-indicators {
+    top: 85% !important;
+  }
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+  main {
+    margin-top: 48vh !important;
+  }
+
+  .carousel-item {
+    height: 60vh;
+  }
+
+  .carousel-caption {
+    top: 19vh !important;
+  }
+
+  .carousel-indicators {
+    top: 85% !important;
+  }
+
+  #video {
+    height: 60vh !important;
+  }
+}
+@media (max-width: 768px) and (min-width: 675px) {
+  main {
+    margin-top: 42vh !important;
+  }
+
+  .carousel-item {
+    height: 55vh;
+  }
+
+  .carousel-caption {
+    top: 15vh !important;
+  }
+
+  .carousel-indicators {
+    top: 85% !important;
+  }
+
+  #video {
+    height: 46vh !important;
+  }
+}
+@media (max-width: 675px) and (min-width: 530px) {
+  main {
+    margin-top: 33vh !important;
+  }
+
+  .carousel-item {
+    height: 45vh;
+  }
+
+  .carousel-caption {
+    top: 5vh !important;
+  }
+
+  .carousel-indicators {
+    top: 85% !important;
+  }
+
+  #video {
+    height: 33vh !important;
+  }
+}
+@media screen and (max-width: 530px) {
+  main {
+    margin-top: 25vh !important;
+  }
+
+  .carousel-caption {
+    display: none;
+  }
+
+  .carousel-indicators {
+    top: 85% !important;
+  }
+
+  #video {
+    height: 20vh !important;
+  }
+}
+@media (max-width: 1920px) and (min-width: 1200px) {
+  main {
+    margin-top: 75vh !important;
+  }
+
+  .carousel-item {
+    height: 80vh;
+  }
+
+  .carousel-caption {
+    top: 30vh !important;
+  }
+
+  .carousel-indicators {
+    top: 85% !important;
+  }
+}
+.carousel-item {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.carousel-indicators {
+  position: absolute;
+}
+.carousel-indicators li {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100%;
+}
+
+.mainTitle {
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.nav-item a {
+  color: white !important;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.carousel-caption {
+  top: 30vh;
+}
+
+main {
+  margin-top: 80vh;
+}
+main #video {
+  background: url("images/video.avif");
+  background-size: cover;
+  height: 80vh;
+}
+main #video .play-area {
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid white;
+  text-align: center;
+  position: relative;
+  left: calc(50% - 40px);
+  top: calc(50% - 40px);
+  font-size: 20px;
+}
+main #video .play-area svg {
+  color: white;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: calc(50% - 20px);
+}
+main #video span {
+  color: white;
+  text-align: center;
+  margin-top: 2em;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+main #\#services span {
+  color: #666363;
+  font-size: 18px;
+}
+main #\#services table td {
+  text-align: center;
+  width: 33%;
+}
+main #\#services table td h3 {
+  margin-top: 1.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+main #team {
+  background: url("images/sl1.avif");
+}
+main #team h1 {
+  color: white;
+  margin-top: 4rem;
+}
+main #team span {
+  color: wheat;
+  font-size: 20px;
+}
+main #team hr {
+  color: white;
+}
+main #team .team-member {
+  margin-bottom: 20px;
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid cornflowerblue;
+}
+main #team .team-member .member-photo {
+  position: relative;
+  overflow: hidden;
+}
+main #team .team-member .team-member-info {
+  padding: 10px;
+}
+main #team .team-member .team-member-info h2 {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: whitesmoke;
+}
+main #team .team-member .team-member-info span {
+  color: #b6b6b6;
+  font-size: 14px;
+}
+main #team .btn {
+  border-radius: 0;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+main #works .col-md-6 {
+  text-align: center;
+}
+main #works .col-md-6 span {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 24px;
+}
+main #works .col-md-6 a {
+  text-decoration: none;
+  font-size: 16px;
+}
+main #works .col-md-6 svg {
+  color: #ab9bfd;
+}
+main #works .btn {
+  border-radius: 0;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+main #testimonials {
+  background: url("images/sl2.avif");
+}
+main #testimonials .content-centered {
+  text-align: center;
+}
+main #testimonials h2 {
+  color: white;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+main #testimonials span {
+  color: wheat;
+  font-size: 20px;
+}
+main #testimonials .faces-area {
+  margin-bottom: 5rem;
+}
+main #testimonials .faces-area .face-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: white;
+  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  display: table-cell;
+}
+main #testimonials .faces-area .face-image img {
+  border-radius: 50%;
+}
+main #testimonials .faces-area .face-image[rel=active] {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+main #testimonials .faces-area svg {
+  color: white;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+main #contact h1 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 26px;
+}
+main #contact input {
+  margin-top: 25px;
+}
+main #contact textarea {
+  margin-top: 25px;
+}
+main #contact button {
+  margin-top: 25px;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+main #contact .col-6 img {
+  width: 150px;
+  height: 100px;
+}
+
+@media (max-width: 440px) {
+  .face-image {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .face-image img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .face-image[rel=active] {
+    width: 42px !important;
+    height: 42px !important;
+  }
+  .face-image[rel=active] img {
+    width: 42px !important;
+    height: 42px !important;
+  }
+}
+footer {
+  background: url("images/sl3.avif");
+  background-size: cover;
+}
+footer p {
+  color: white;
+  font-size: 18px;
+}
+footer h1 {
+  color: white;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+footer .subscribe-rectangle {
+  background: transparent;
+  border: 1px solid lightseagreen;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  height: 2em;
+  width: 40em;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+footer button {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  height: 2em;
+  width: 5em;
+  border: none;
+  opacity: 0.5;
+}
+footer .social {
+  border: 1px solid white;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+footer .social a {
+  color: white;
+}
+footer .social a svg {
+  width: 16px;
+  height: 16px;
+}
+footer #copyright a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+footer #copyright span {
+  color: white;
+}
+
+.vertical-centered {
+  margin-top: calc(38px - 1em);
+}
+
+/*# sourceMappingURL=landing-page-style.css.map */

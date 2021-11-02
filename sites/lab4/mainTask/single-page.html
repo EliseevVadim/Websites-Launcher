@@ -5,18 +5,18 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=6.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Страница с выбранными услугами">
+    <meta name="description" content="Страница с описанием отдельной услуги">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/shoppingCartStyle.css">
-    <title>Страница предзаказа</title>
+    <link rel="stylesheet" href="styles/singlePageStyle.css">
+    <title>Страница выбора отдельной услуги</title>
 </head>
 <body>
     <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a href="#" class="navbar-brand">
+            <a href="../extraTask/landing-page.html" class="navbar-brand">
                 <img src="images/logo.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
@@ -115,195 +115,195 @@
                 </div>
             </div>
         </section>
-        <div class="container mb-3">
-            <div class="table-responsive">
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th>Информация об услуге</th>
-                            <th class="centered-ceil">Цена</th>
-                            <th class="centered-ceil">Количество</th>
-                            <th class="centered-ceil">Предоплата</th>
-                            <th class="centered-ceil">Стоимость</th>
-                            <th class="centered-ceil">Действие</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>
-                                <div class="row d-flex">
-                                    <div class="col-md-3">
-                                        <img src="images/pomp.avif" alt="alt" class="img-fluid service-img">
-                                    </div>
-                                    <div class="col-md-9 service-description">
-                                        <h1>Замена помпы</h1>
-                                        <div class="d-flex">
-                                            <h2>Скидка:</h2>
-                                            <span>отсутствует</span>
-                                        </div>
-                                        <div class="d-flex">
-                                            <h2>Бонусы:</h2>
-                                            <span>нет</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </th>
-                            <th class="centered-ceil">
-                                <span>700 ₽</span>
-                            </th>
-                            <th class="centered-ceil">
-                                <input type="number" class="form-control" placeholder="Количество единиц услуги...">
-                            </th>
-                            <th class="centered-ceil">
-                                <span>Отсутствует</span>
-                            </th>
-                            <th class="centered-ceil">
-                                <span>700 ₽</span>
-                            </th>
-                            <th class="centered-ceil">
-                                <button class="remove-button" aria-label="remove-button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-                                    </svg>
-                                </button>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>
-                                <div class="row d-flex">
-                                    <div class="col-md-3">
-                                        <img src="images/s3-sp.avif" alt="alt" class="img-fluid service-img">
-                                    </div>
-                                    <div class="col-md-9 service-description">
-                                        <h1>Установка брызговиков на авто</h1>
-                                        <div class="d-flex">
-                                            <h2>Скидка:</h2>
-                                            <span>30%</span>
-                                        </div>
-                                        <div class="d-flex">
-                                            <h2>Бонусы:</h2>
-                                            <span>нет</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </th>
-                            <th class="centered-ceil">
-                                <span>1 500 ₽</span>
-                            </th>
-                            <th class="centered-ceil">
-                                <input type="number" class="form-control" placeholder="Количество единиц услуги...">
-                            </th>
-                            <th class="centered-ceil">
-                                <span>Отсутствует</span>
-                            </th>
-                            <th class="centered-ceil">
-                                <span>1 500 ₽</span>
-                            </th>
-                            <th class="centered-ceil">
-                                <button class="remove-button" aria-label="remove-button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-                                    </svg>
-                                </button>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>
-                                <div class="row d-flex">
-                                    <div class="col-md-3">
-                                        <img src="images/fuel-cleaning.avif" alt="alt" class="img-responsive service-img">
-                                    </div>
-                                    <div class="col-md-9 service-description">
-                                        <h1>Очистка топливной системы</h1>
-                                        <div class="d-flex">
-                                            <h2>Скидка:</h2>
-                                            <span>отсутствует</span>
-                                        </div>
-                                        <div class="d-flex">
-                                            <h2>Бонусы:</h2>
-                                            <span>нет</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </th>
-                            <th class="centered-ceil">
-                                <span>1 000 ₽</span>
-                            </th>
-                            <th class="centered-ceil">
-                                <input type="number" class="form-control" placeholder="Количество единиц услуги...">
-                            </th>
-                            <th class="centered-ceil">
-                                <span>Отсутствует</span>
-                            </th>
-                            <th class="centered-ceil">
-                                <span>1 000 ₽</span>
-                            </th>
-                            <th class="centered-ceil">
-                                <button class="remove-button" aria-label="remove-button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-                                    </svg>
-                                </button>
-                            </th>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="container mb-5">
-            <div class="row d-flex">
-                <div class="col-md-6">
-                    <button class="btn btn-outline-danger" type="button">
-                        Очистить корзину заказа
-                    </button>
-                </div>
-                <div class="col-md-6">
-                    <button class="btn btn-outline-success" type="button" style="float: right"
-                            onclick="window.location.href='checkout.html'">
-                        Продолжить
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="container mb-5">
-            <div class="row d-flex">
-                <div class="col-md-4 mb-3">
-                    <form action="#">
-                        <h3>Подтверждение личности</h3>
-                        <input class="form-control" type="tel" placeholder="Введите номер телефона..." required
-                               pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="Введите свой номер телефона
-                               в формате xxx-xxx-xx-xx">
-                        <button class="btn btn-primary mt-3" type="submit">
-                            Получить СМС с кодом подтверждения
-                        </button>
-                    </form>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <form action="#">
-                        <h3>Промокод</h3>
-                        <span>Введите промокод сюда (если он у Вас есть)</span>
-                        <input class="form-control mt-3" type="text" placeholder="Код..." required>
-                        <button class="btn btn-success mt-3" type="submit">
-                            Применить промокод
-                        </button>
-                    </form>
-                </div>
-                <div class="col-md-4 mb-3 confirmation-block">
-                    <div class="pt-4">
-                        <span>Общая стоимость: </span>
-                        <strong>3 200 ₽</strong>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="slide-container d-flex w-100 justify-content-center">
+                        <img src="images/painting-for-sp.avif" class="d-block" alt="...">
                     </div>
-                    <div>
-                        <span>К оплате: </span>
-                        <strong>3 200 ₽</strong>
+                </div>
+                <div class="carousel-item">
+                    <div class="slide-container d-flex w-100 justify-content-center">
+                        <img src="images/tuning-for-sp.avif" class="d-bloc" alt="...">
                     </div>
-                    <hr>
-                    <button class="w-100 btn btn-danger" onclick="window.location.href='checkout.html'">
-                        Перейти к оплате
-                    </button>
+                </div>
+                <div class="carousel-item">
+                    <div class="slide-container d-flex w-100 justify-content-center">
+                        <img src="images/for-sp-3.avif" class="d-block" alt="...">
+                    </div>
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
         </div>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 service-info">
+                    <div class="pb-5">
+                        <h1 class="text-danger">Тюнинг авто</h1>
+                        <h2>Покраска автомобиля</h2>
+                    </div>
+                    <p class="pb-1">Успейте заказать полную покраску автомобиля по очень выгодной цене. Сделайте заказ
+                    до конца этой недели и получите скидку в размере 30%. Ниже вы можете выбрать цвет, которым
+                    хотите покрасить свой автомобиль, закрашиваемую область, примерное время покраски
+                    (в днях).</p>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-6">
+                            <span class="text-secondary">Вид услуги:
+                                <strong>VIP</strong>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="text-secondary">Скидка:
+                                <strong>30%</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="text-danger pt-4 price">
+                        15 000 ₽
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <form action="#" class="pb-3">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-8">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-4 d-block pb-3" style="text-align: center">
+                                <div class="labelled-control">
+                                    <span>Выберите цвет</span>
+                                    <select name="colors" class="form-select">
+                                        <option selected>Красный</option>
+                                        <option value="1">Черный</option>
+                                        <option value="2">Желтый</option>
+                                        <option value="3">Зеленый</option>
+                                        <option value="4">Синий</option>
+                                        <option value="5">Белый</option>
+                                        <option value="6">Другое</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 d-block pb-3" style="text-align: center">
+                                <div class="labelled-control">
+                                    <span>Выберите закрашиваемую область</span>
+                                    <select name="area" class="form-select">
+                                        <option selected>Полная покраска</option>
+                                        <option value="1">Только задняя часть</option>
+                                        <option value="2">Бампер</option>
+                                        <option value="3">Покраска дверей</option>
+                                        <option value="4">Другое</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 d-block pb-3" style="text-align: center">
+                                <div class="labelled-control">
+                                    <span>Введите время работы</span>
+                                    <input type="number" class="form-control" placeholder="Дни на работу">
+                                </div>
+                            </div>
+                            <button class="btn btn-outline-danger" type="button" onclick="window.location.href='checkout.html'">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                                Добавить в заказ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <hr>
+        </div>
+        <section id="feature-items" class="feat-items">
+            <div class="container text-center pt-3">
+                <div class="section-title">
+                    <h2 class="pb-3">Вас также может заинтересовать</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="feat-item">
+                            <div class="item-img">
+                                <img class="img-fluid" src="images/ustanovka_obvesov_tuning.avif" alt="engine fix">
+                                <div class="possible-action">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                        </svg>
+                                        Добавить в заказ
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="feat-item-info">
+                                <h2>Установка и подгонка обвеса</h2>
+                                <span>2 000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="feat-item">
+                            <div class="item-img">
+                                <img class="img-fluid" src="images/painting.avif" alt="paint">
+                                <div class="possible-action">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                        </svg>
+                                        Добавить в заказ
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="feat-item-info">
+                                <h2>Покраска авто</h2>
+                                <span>Договорная</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="feat-item">
+                            <div class="item-img">
+                                <img class="img-fluid" src="images/s3-sp.avif" alt="check radiator">
+                                <div class="possible-action">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                        </svg>
+                                        Добавить в заказ
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="feat-item-info">
+                                <h2>Установка брызговиков на авто</h2>
+                                <span>1 500 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="feat-item">
+                            <div class="item-img">
+                                <img class="img-fluid" src="images/s2-sp.avif" alt="check conditioner">
+                                <div class="possible-action">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                        </svg>
+                                        Добавить в заказ
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="feat-item-info">
+                                <h2>Антихром для авто</h2>
+                                <span>2 000 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="newsletter-field mt-2 mb-2">
             <div class="container">
                 <div class="row">
@@ -380,7 +380,7 @@
                         <p><a href="#" class="text-reset">Политика конфиденциальности</a></p>
                         <p><a href="#" class="text-reset">Как заказать услугу</a></p>
                         <p><a href="#" class="text-reset">Программы лояльности</a></p>
-                        <p><a href="#" class="text-reset">Специальные предложения</a></p>
+                        <p><a href="../complicatedTask/newsletter.html" class="text-reset">Специальные предложения</a></p>
                     </div>
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <h6 class="text-uppercase text-danger fw-bold mb-4">

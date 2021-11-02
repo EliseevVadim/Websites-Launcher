@@ -1,0 +1,170 @@
+@charset "UTF-8";
+body {
+  background: #323232;
+}
+
+.main-block {
+  position: absolute;
+  left: 25%;
+  margin: 0 auto;
+  top: 10%;
+  background: #a29f9f;
+  width: 50%;
+  box-shadow: 0 0 10px black;
+}
+.main-block header #most-top {
+  left: 50%;
+}
+.main-block header #most-top .nav-item a {
+  color: white;
+  text-decoration: none;
+}
+.main-block header #logo-part {
+  background: #787374;
+  background: linear-gradient(180deg, #787374 22%, #454142 49%, #302c2c 80%);
+}
+.main-block header #logo-part .company-name {
+  position: relative;
+  top: calc(50% - 12px);
+  font-size: 24px;
+  color: #7c7878;
+  font-weight: bold;
+}
+@media screen and (max-width: 420px) {
+  .main-block header .company-name {
+    top: 5% !important;
+  }
+}
+.main-block header h1 {
+  font-weight: bold;
+  font-size: 28px;
+}
+.main-block header .details-button {
+  color: yellow;
+  font-weight: bolder;
+  background: #989697;
+  background: linear-gradient(180deg, #989697 41%, #191818 59%);
+}
+.main-block .feat-item {
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+}
+.main-block .feat-item .item-img {
+  position: relative;
+  overflow: hidden;
+}
+.main-block .feat-item .feat-item-info {
+  padding: 10px;
+}
+.main-block .feat-item .feat-item-info h2 {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: white;
+}
+.main-block .feat-item .feat-item-info span {
+  font-size: 14px;
+  color: black;
+}
+.main-block .feat-item .feat-item-info a {
+  color: #ffed1a;
+  font-weight: bolder;
+}
+.main-block .badged-image {
+  display: inline-block;
+  position: relative;
+}
+.main-block .notify-badge {
+  position: absolute;
+  left: 0;
+  top: -5%;
+  background: red;
+  text-align: left;
+  padding: 5px 10px;
+  font-size: 20px;
+  z-index: 10;
+  width: 50%;
+  clip-path: polygon(50% 35%, 0% 100%, 100% 100%);
+  transform-origin: left bottom;
+  transform: rotate(-45deg);
+  height: 50%;
+}
+.main-block .notify-badge span {
+  color: white;
+  position: relative;
+  top: 65%;
+  margin: auto;
+  left: calc(50% - 3vw);
+  font-size: 1.5vw;
+  font-weight: bolder;
+}
+.main-block .notify-badge p {
+  color: white;
+  position: relative;
+  top: 65%;
+  margin: auto;
+  left: calc(50% - 3vw);
+  font-size: 1.5vw;
+  font-weight: bolder;
+}
+@media screen and (max-width: 650px) {
+  .main-block .notify-badge span {
+    top: 50%;
+  }
+  .main-block .notify-badge p {
+    top: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main-block .notify-badge span {
+    top: 40%;
+  }
+  .main-block .notify-badge p {
+    top: 40%;
+  }
+}
+@media screen and (max-width: 335px) {
+  .main-block .notify-badge span {
+    top: 30%;
+  }
+  .main-block .notify-badge p {
+    top: 30%;
+  }
+}
+.main-block .large-text {
+  background: black;
+  color: #a29f9f;
+}
+.main-block .large-text span {
+  text-align: justify;
+  font-size: 6.6vw;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap;
+}
+.main-block .large-text span::after {
+  content: "Не пропустите!";
+  color: white;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 2.5vw;
+  position: relative;
+  left: calc(-8vw - 50%);
+  top: -1.25vw;
+}
+.main-block footer nav a {
+  color: white;
+}
+.main-block footer nav span {
+  font-weight: bolder;
+}
+.main-block footer .bottom-line {
+  color: transparent;
+  background-color: black;
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 25px, rgba(255, 255, 255, 0.5) 25px, rgba(255, 255, 255, 0.5) 50px);
+}
+
+/*# sourceMappingURL=newsletter-style.css.map */
