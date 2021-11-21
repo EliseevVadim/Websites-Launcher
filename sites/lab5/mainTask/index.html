@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=6.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Элементы страницы на js">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="my-slider" id="selfMadeSlider">
+            <div id="left-arrow">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-left"
+                     class="svg-inline--fa fa-angle-left" role="img" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 256 512" width="32" height="32">
+                    <path fill="currentColor" d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"></path>
+                </svg>
+            </div>
+            <ul class="slider-content">
+                <li class="slider-item">
+                    <img src="images/moss1.jpg" alt="#">
+                </li>
+                <li class="slider-item">
+                    <img src="images/moss2.jpg" alt="#">
+                </li>
+                <li class="slider-item">
+                    <img src="images/moss3.jpg" alt="#">
+                </li>
+                <li class="slider-item"><img src="images/moss4.jpg" alt="#"></li>
+                <li class="slider-item"><img src="images/moss5.jpg" alt="#"></li>
+            </ul>
+            <div id="right-arrow">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right"
+                     class="svg-inline--fa fa-angle-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 256 512" width="32" height="32">
+                    <path fill="currentColor" d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"></path>
+                </svg>
+            </div>
+            <div id="slider-indicators"></div>
+        </div>
+        <div id="tabs-area">
+            <div id="tabs">
+                <button class="tab-button" value="0">Tab 1</button>
+                <button class="tab-button" value="1">Tab 2</button>
+                <button class="tab-button" value="2">Tab 3</button>
+                <button class="tab-button" value="3">Tab 4</button>
+            </div>
+            <div class="tab-content">
+                <p>Lorem ipsum dolor moh amet, consectetur adipisicing elit. Accusantium adipisci animi blanditiis commodi
+                    consectetur dignissimos dolore doloremque dolorum esse est ex illo incidunt iure labore laborum libero
+                    maxime molestiae nam neque numquam obcaecati officia omnis placeat porro possimus quaerat qui quis quos
+                    reprehenderit sequi, sit soluta tempora veritatis. Atque autem distinctio doloribus fugit inventore,
+                    ipsum optio possimus qui vel voluptates? Accusamus architecto, at error esse harum iste perspiciatis
+                    quibusdam repudiandae! A accusamus adipisci consectetur dignissimos doloremque fuga hic illum impedit,
+                    in ipsam nihil quaerat quisquam? Ab cumque ipsam magnam minus nulla quae reiciendis, sunt. Accusantium
+                    adipisci amet, assumenda beatae consequuntur, debitis dicta, dignissimos dolorem eligendi error eum
+                    inventore laborum nam nobis nostrum optio quae qui quibusdam quis quisquam tempora tempore velit?
+                    Accusamus at beatae cumque deserunt et explicabo fugiat impedit incidunt maxime necessitatibus nostrum
+                    odit perspiciatis quae quaerat quam quas quibusdam reiciendis similique, soluta tenetur veritatis
+                    voluptas voluptates voluptatum. Corporis, cupiditate ducimus enim itaque magnam quasi quibusdam.
+                    Accusantium alias, blanditiis cum est eum facere inventore libero modi neque nobis nulla omnis quia quo
+                    repellat sapiente, similique tempora ut, veritatis vitae voluptas. Aspernatur beatae dolores
+                    exercitationem ipsa molestias natus quod repudiandae. A aliquid deserunt doloribus ea est magnam natus
+                    numquam repellendus totam. Ab amet aperiam cumque debitis deserunt ea eos ex excepturi harum hic iste
+                    labore laboriosam, modi nemo optio provident quam quia quisquam reprehenderit rerum. Accusantium
+                    architecto atque dicta, distinctio dolor dolorem dolorum error eum fugit iste iure, laborum maiores nam
+                    natus nisi officia pariatur placeat quam qui quia rem voluptatem voluptatibus voluptatum. Ad at dicta
+                    distinctio eveniet libero molestias nihil quasi qui quibusdam quod? Accusantium earum fuga quaerat
+                    saepe, sit sunt voluptatum! Autem corporis debitis ea, facilis officia, quibusdam quod saepe ut velit
+                    veritatis voluptate voluptates. Amet aperiam cum cupiditate exercitationem iusto nihil optio qui saepe
+                    similique. Cupiditate eos est eum fugit inventore magni maxime perferendis totam ut voluptatem?
+                    Architecto aspernatur commodi deserunt dolorum eius enim facere iste laborum necessitatibus nulla
+                    possimus rem, rerum unde voluptate, voluptatem? Autem commodi fuga inventore nam officiis quisquam
+                    repellendus reprehenderit saepe. Ab aliquam asperiores aspernatur blanditiis delectus, distinctio
+                    exercitationem expedita laboriosam maiores nam nihil nostrum placeat quae quibusdam quo suscipit ullam
+                    voluptates! Ab assumenda atque aut corporis, culpa cupiditate ipsa labore libero magnam pariatur
+                    quaerat quis, reiciendis suscipit temporibus vitae! Accusantium assumenda at harum id, illum incidunt
+                    ipsam nihil nisi officia quaerat qui repellendus velit voluptatibus. Adipisci commodi consequuntur natus
+                    quasi? Architecto assumenda, commodi consequuntur corporis dolorem doloribus dolorum eos esse est illo
+                    ipsa magnam officia officiis optio, quos ratione rem similique sit tenetur velit. Eveniet itaque
+                    laboriosam numquam provident quas quasi reprehenderit sunt totam ullam unde! Ad alias asperiores, enim
+                    eveniet laudantium magni, minus nam optio sed sequi sint sit. Ad, aliquam aliquid amet animi, architecto
+                    commodi debitis delectus eaque expedita facilis fugit hic, id illo impedit ipsam iure iusto molestias
+                    nobis odit repellendus saepe sunt veritatis. Blanditiis consequatur doloremque iste non quo. Assumenda
+                    commodi dolorum enim et explicabo, laboriosam minima natus, necessitatibus nemo nulla provident rerum
+                    sunt tenetur vel, veniam voluptatem.</p>
+                <img src="images/moss1.jpg" alt="#" width="480" height="360">
+            </div>
+            <div class="tab-content">
+                <p>Lorem ipsum dolor moh amet, consectetur adipisicing elit. Ab, adipisci asperiores consectetur consequatur
+                    corporis culpa doloremque earum hic inventore laborum magnam magni nesciunt nisi odit perferendis
+                    possimus provident quidem repellat repudiandae sed sequi similique tenetur totam veniam vero, vitae
+                    voluptate voluptatem. Ab beatae cum facere labore nisi nulla quibusdam tenetur. Ad ex minima minus
+                    molestiae? Ab accusantium aliquid dolore dolorum ea error ipsa minima modi, natus odit officiis
+                    recusandae similique, temporibus vero voluptatibus. Blanditiis error numquam repellendus ut! Ad animi
+                    aspernatur commodi cumque debitis deserunt dolorem, dolores, error eveniet hic id minus necessitatibus
+                    nemo neque nihil placeat suscipit? Animi aperiam, consectetur culpa doloremque enim ex facere facilis
+                    fugit harum in, laboriosam laborum, maiores maxime minima nulla obcaecati quae quaerat soluta ullam
+                    voluptatibus. A aliquam aliquid beatae blanditiis culpa dicta eius, excepturi exercitationem hic in
+                    ipsum minima nemo, nihil placeat praesentium quis reprehenderit sit unde voluptas voluptatem.
+                    Accusantium animi, assumenda aut consequuntur cumque delectus dolorum eaque, enim id illum inventore
+                    ipsa iusto labore laboriosam mollitia necessitatibus nisi numquam omnis qui ratione velit vero vitae
+                    voluptatem. Ad alias consectetur distinctio eum expedita inventore molestias quis! Accusantium, ad alias
+                    aperiam consequatur debitis distinctio dolor expedita explicabo facere itaque minus mollitia nihil omnis
+                    quae quas soluta tempora veniam veritatis. Aliquam animi asperiores at atque consequuntur dicta dolor
+                    dolore dolores ducimus est excepturi facilis fugit id, nobis nostrum nulla perspiciatis placeat possimus
+                    quae quos ratione, repellat rerum similique sunt veniam. Adipisci aliquam amet aspernatur blanditiis
+                    corporis, debitis eligendi ipsum laboriosam minima nulla porro praesentium, quam quasi quidem quo
+                    ratione reiciendis sit voluptas. Aliquam architecto atque consequatur, corporis laboriosam maxime
+                    tempore. Adipisci earum enim error est et expedita laborum laudantium, minus nam nihil odit quaerat
+                    tempora voluptas! Accusamus alias amet animi atque deserunt dicta dolores, ea ex ipsa labore laboriosam
+                    minima possimus quas qui, quod ratione reiciendis ut, voluptatem? Aspernatur autem praesentium quia
+                    ratione sint vitae? Alias aliquid dolorem eaque excepturi reprehenderit.</p>
+                <img src="images/moss2.jpg" alt="#" width="480" height="360">
+            </div>
+            <div class="tab-content">
+                <p>Lorem ipsum dolor moh amet, consectetur adipisicing elit. Corporis distinctio dolorem, earum error est
+                    exercitationem hic in laboriosam laborum necessitatibus nostrum, odit quisquam recusandae sit veritatis.
+                    Aperiam atque dolorem quas soluta? Assumenda aut, corporis dolorum eos id in iusto libero minus natus
+                    nisi optio repellat repudiandae unde? Asperiores ex, quis. Animi assumenda aut autem consequatur culpa
+                    cum cupiditate dolorem doloremque earum eius exercitationem facere laboriosam maiores molestiae, neque
+                    officia quaerat quidem rem sit ut. Atque cum dolorum, ducimus enim eveniet laboriosam modi molestiae
+                    nesciunt numquam officiis quod repudiandae sed voluptas voluptate voluptatum! Commodi inventore maiores
+                    tempora vel veniam? Beatae dolores excepturi illo magnam, maxime necessitatibus nesciunt quisquam rem
+                    reprehenderit sunt? Consequatur consequuntur quas ut voluptas. Architecto, eos error id inventore minima
+                    quisquam quod sed unde veniam! Assumenda beatae commodi corporis debitis doloribus, eius esse illo nisi
+                    odit, quae ratione, tempore temporibus totam unde veniam veritatis vitae? Assumenda, aut commodi
+                    consequatur debitis esse eum excepturi ipsa labore nulla odit omnis optio perferendis quam quisquam
+                    sequi voluptate, voluptatem. Ad delectus error est incidunt nam, neque omnis perspiciatis praesentium
+                    quae quidem, ratione vel voluptatem. Adipisci aliquam amet architecto, aspernatur assumenda commodi
+                    culpa deleniti ducimus earum est et fuga fugit id, illo ipsa ipsam itaque maxime modi necessitatibus
+                    neque nobis nulla obcaecati, odio odit officia officiis pariatur perspiciatis quas quis ratione rem
+                    repellat sequi soluta sunt suscipit totam ullam! Autem deserunt dolorem explicabo molestias quisquam
+                    ratione rem veniam voluptatum. Ab accusamus alias dignissimos dolores exercitationem facilis fugiat,
+                    hic inventore ipsam ipsum laudantium magnam magni nemo optio perferendis quaerat quas quod reiciendis
+                    sint soluta temporibus vel veritatis? Adipisci aliquam architecto assumenda atque aut autem commodi
+                    cumque dignissimos, distinctio dolorum ea eligendi error, est et excepturi fugiat, itaque laborum
+                    maiores molestiae nulla numquam odit officia quam quod recusandae reprehenderit saepe sapiente sequi
+                    tempore vel? Asperiores atque aut, cum impedit maxime nulla provident ullam. Aperiam atque autem commodi
+                    culpa dicta, dolore doloremque ea earum enim est ex fuga fugit ipsa ipsam laboriosam laborum maiores
+                    mollitia natus, nesciunt numquam perferendis perspiciatis quaerat quia quibusdam quo quod saepe sequi
+                    sint tenetur ullam veniam, vero voluptate voluptatum. Animi architecto aut, consectetur dolore, dolorum
+                    eos excepturi libero molestiae molestias nesciunt omnis quaerat rem reprehenderit? Consectetur excepturi
+                    id ipsam officia veritatis. Adipisci aperiam at, autem commodi culpa eius eos error esse facilis hic id
+                    iusto minus officiis pariatur placeat praesentium provident quam quisquam quo rem repudiandae sit
+                    suscipit tempore, temporibus tenetur voluptatum.</p>
+                <img src="images/moss3.jpg" alt="#" width="480" height="360">
+            </div>
+            <div class="tab-content">
+                <p>Lorem ipsum dolor moh amet, consectetur adipisicing elit. Accusamus accusantium, architecto beatae
+                    corporis cupiditate delectus dolorem doloremque doloribus enim et ex expedita explicabo fugiat harum
+                    inventore ipsam laborum maiores maxime minima necessitatibus nihil possimus quis quos repellat sequi,
+                    voluptatibus voluptatum? Accusamus ad consequuntur cum deleniti dolorem earum eligendi error et eum
+                    illum labore magnam minus molestias mollitia natus nisi quasi, rem sed similique soluta tempore tenetur
+                    totam veritatis. A ad blanditiis dolorum sint tenetur. Deleniti deserunt doloribus hic illum, ipsam
+                    laborum, magni natus nihil, nobis numquam quo quod soluta? Cum cupiditate deserunt, dicta dolorem eaque
+                    error excepturi exercitationem illum iusto libero magnam maxime, molestias officiis perferendis quaera
+                    quibusdam saepe sapiente sunt, tenetur voluptatum. Esse id mollitia nemo quaerat velit. Accusamus
+                    aliquam at commodi consequuntur corporis cupiditate deleniti distinctio dolore dolorem doloremque
+                    doloribus ea eligendi enim excepturi, explicabo fugiat ipsa iure iusto labore magnam minus modi nemo
+                    numquam, obcaecati odit perferendis quia, quibusdam quidem repellat repudiandae saepe sit voluptatem
+                    voluptates. Alias, aut deleniti dolor eaque eos excepturi ipsa minus mollitia, quasi qui quia ratione
+                    rerum similique soluta tempore totam voluptate! Accusantium alias autem cupiditate ea eaque eveniet ex
+                    fuga illum laborum, maiores minus molestiae quidem quis saepe tempore, veniam, vitae. Consectetur
+                    distinctio expedita officia repellat soluta! Ab aperiam consequuntur corporis dolor dolores earum enim
+                    ex facilis incidunt ipsum libero numquam, officiis qui quis quos rem reprehenderit similique soluta
+                    voluptas.</p>
+                <img src="images/moss4.jpg" alt="#" width="480" height="360">
+            </div>
+        </div>
+        <div id="accordion-area">
+            <div class="menu-title">
+                <span> Accordion Menu Item 1</span>
+            </div>
+            <div class="menu-content">
+                <a href="#">Подпункт 1 пункта 1</a>
+                <a href="#">Подпункт 2 пункта 1</a>
+                <a href="#">Подпункт 3 пункта 1</a>
+                <a href="#">Подпункт 4 пункта 1</a>
+                <a href="#">Подпункт 5 пункта 1</a>
+                <a href="#">Подпункт 6 пункта 1</a>
+            </div>
+            <div class="menu-title">
+                <span> Accordion Menu Item 2</span>
+            </div>
+            <div class="menu-content">
+                <a href="#">Подпункт 1 пункта 2</a>
+                <a href="#">Подпункт 2 пункта 2</a>
+                <a href="#">Подпункт 3 пункта 2</a>
+                <a href="#">Подпункт 4 пункта 2</a>
+                <a href="#">Подпункт 5 пункта 2</a>
+                <a href="#">Подпункт 6 пункта 2</a>
+            </div>
+            <div class="menu-title">
+                <span> Accordion Menu Item 3</span>
+            </div>
+            <div class="menu-content">
+                <a href="#">Подпункт 1 пункта 3</a>
+                <a href="#">Подпункт 2 пункта 3</a>
+                <a href="#">Подпункт 3 пункта 3</a>
+                <a href="#">Подпункт 4 пункта 3</a>
+                <a href="#">Подпункт 5 пункта 3</a>
+                <a href="#">Подпункт 6 пункта 3</a>
+            </div>
+            <div class="menu-title">
+                <span> Accordion Menu Item 4</span>
+            </div>
+            <div class="menu-content">
+                <a href="#">Подпункт 1 пункта 4</a>
+                <a href="#">Подпункт 2 пункта 4</a>
+                <a href="#">Подпункт 3 пункта 4</a>
+                <a href="#">Подпункт 4 пункта 4</a>
+                <a href="#">Подпункт 5 пункта 4</a>
+                <a href="#">Подпункт 6 пункта 4</a>
+            </div>
+            <div class="menu-title">
+                <span> Accordion Menu Item 5</span>
+            </div>
+            <div class="menu-content">
+                <a href="#">Подпункт 1 пункта 5</a>
+                <a href="#">Подпункт 2 пункта 5</a>
+                <a href="#">Подпункт 3 пункта 5</a>
+                <a href="#">Подпункт 4 пункта 5</a>
+                <a href="#">Подпункт 5 пункта 5</a>
+                <a href="#">Подпункт 6 пункта 5</a>
+            </div>
+        </div>
+        <div id="modal-window-container">
+            <button id="show-button">Показать окно</button>
+            <div id="modal-area">
+                <div id="modal-window">
+                    <header>
+                        <span class="title">Modal Window</span>
+                        <div id="close-button">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark"
+                                 class="svg-inline--fa fa-xmark" role="img" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 320 512" width="30" height="30">
+                                <path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path>
+                            </svg>
+                        </div>
+                    </header>
+                    <main>
+                        <h1>Это мох</h1>
+                        <img src="images/moss2.jpg" alt="" width="240" height="180">
+                        <h2>Что-то обо мхе:</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto aspernatur at
+                            culpa, dolorum ducimus fuga impedit iusto nam necessitatibus nobis odit pariatur, placeat
+                            quasi, unde. Dolores nesciunt pariatur recusandae soluta unde. Blanditiis consectetur
+                            eligendi, eum fugiat fugit quae sequi.</p>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="validation-form-area">
+            <form action="#" id="validating-form" onsubmit="alert('Валидация прошла успешно!')">
+                <h1>Форма с валидацией введенных полей</h1>
+                <div class="marked-field">
+                    <input type="email" placeholder="Введите email..." required>
+                    <span class="error-message">Введенный email некорректен</span>
+                </div>
+                <div class="marked-field">
+                    <input type="text" placeholder="Введите пароль..."
+                           pattern="(?=^.{8,}$)(?=.*\d)(?=.*[A-Z])(?=.*[a-z])((?=.*\W)|(?=.*_+)).*"
+                           required>
+                    <span class="error-message">Вводимый пароль должен удовлетворять следующим требованиям:
+                        быть не короче 8 символов, содержать в себе хотя бы одну цифру,
+                        строчную и заглавную латинские буквы, спецсимвол (_ . , ? ! и т. д.)</span>
+                </div>
+                <button type="submit">Подтвердить</button>
+            </form>
+        </div>
+        <div id="scale-area">
+            <h1>Это увеличиваемый мох</h1>
+            <div class="image-container">
+                <img src="images/moss3.jpg" alt="#">
+                <div class="zoom-point"></div>
+            </div>
+        </div>
+        <div id="ranger-area">
+            <div id="ranger" startValue="0" endValue="100">
+                <span id="left-value">0</span>
+                <div id="scroll-field">
+                    <div id="start-border-mark">
+                        <span class="border-value">5</span>
+                        <div class="mark"></div>
+                    </div>
+                    <div id="first-bar"></div>
+                    <div id="second-bar"></div>
+                    <div id="end-border-mark">
+                        <span class="border-value">5</span>
+                        <div class="mark"></div>
+                    </div>
+                </div>
+                <span id="right-value">0</span>
+            </div>
+        </div>
+        <div id="hamburger-menu-area">
+            <div id="hamburger-menu">
+                <div id="hamburger-icon">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                         class="svg-inline--fa fa-bars" role="img" xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 448 512">
+                        <path fill="currentColor" d="M416 224H31.1C14.33 224 0 238.3 0 256s14.33 32 31.1 32h384C433.7 288 448 273.7 448 256S433.7 224 416 224zM416 384H31.1C14.33 384 0 398.3 0 415.1S14.33 448 31.1 448h384C433.7 448 448 433.7 448 416S433.7 384 416 384zM416 64H31.1C14.33 64 0 78.33 0 95.1S14.33 128 31.1 128h384C433.7 128 448 113.7 448 96S433.7 64 416 64z"></path>
+                    </svg>
+                </div>
+                <ul>
+                    <li class="active hasChildren">
+                        <a href="#">Menu</a>
+                        <ul>
+                            <li>
+                                <a href="#">1</a>
+                            </li>
+                            <li class="subitem-with-children">
+                                <a href="#">2</a>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>0</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li class="subitem-with-children">
+                                <a href="#">4</a>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>0</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">5</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Item1</a>
+                    </li>
+                    <li>
+                        <a href="#">Item2</a>
+                    </li>
+                    <li class="hasChildren">
+                        <a href="#">Item3</a>
+                        <ul>
+                            <li>
+                                <a href="#">1</a>
+                            </li>
+                            <li class="subitem-with-children">
+                                <a href="#">2</a>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>0</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">4</a>
+                            </li>
+                            <li>
+                                <a href="#">5</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Item4</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="elements/slider.js"></script>
+    <script src="elements/tabs.js"></script>
+    <script src="elements/accordion.js"></script>
+    <script src="elements/modalWindow.js"></script>
+    <script src="elements/imageScaler.js"></script>
+    <script src="elements/hamburger.js"></script>
+    <script src="elements/ranger.js"></script>
+</body>
+</html>
