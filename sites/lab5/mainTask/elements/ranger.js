@@ -70,7 +70,6 @@ function moveBars(e) {
             leftSpan.textContent = leftBar.value;
             leftPixels = (leftBar.value / coefficient);
             leftBar.style.left = leftPixels + 'px';
-            console.log('linear-gradient(to right, red '+ (leftBar.value / coefficient) +'px, blue 100px)')
             scrollField.style.background = 'linear-gradient(to right, green '+ leftPixels +'px, brown ' +  leftPixels + 'px, brown '+ rightPixels + 'px, green '+ rightPixels +'px)';
         }
         else if (rightBar.selected && leftBar.value <= rightBar.value - minimalGap && rightBar.value <= maxValue) {
