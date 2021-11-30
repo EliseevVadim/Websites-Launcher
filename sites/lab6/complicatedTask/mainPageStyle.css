@@ -1,0 +1,193 @@
+body {
+  background: lightskyblue;
+}
+
+.container {
+  background-color: lightgrey;
+  width: 550px;
+  min-height: 250px;
+  padding: 30px 20px;
+  position: absolute;
+  left: calc(50% - 275px);
+  border-radius: 8px;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+}
+.container header {
+  background: cornflowerblue;
+  width: fit-content;
+}
+.container header .title-bar {
+  display: flex;
+  width: fit-content;
+}
+.container header .title-bar #caption {
+  display: flex;
+  background: brown;
+  color: white;
+  box-sizing: border-box;
+}
+.container header .title-bar #caption svg {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+.container header .title-bar #caption span {
+  margin-right: 5px;
+  font-size: 20px;
+  position: relative;
+  top: calc(50% - 0.5em);
+}
+.container header .title-bar #date-holder {
+  height: 50px;
+  background: seagreen;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  width: 100px;
+}
+.container header .title-bar #week-holder {
+  box-sizing: border-box;
+  height: 50px;
+  background: orange;
+  text-align: center;
+  color: white;
+  width: 100px;
+  padding-top: 0.3em;
+  cursor: pointer;
+}
+.container header .title-bar #week-holder::after {
+  content: attr(content);
+  box-sizing: border-box;
+  background: green;
+  display: none;
+  position: relative;
+  left: 100%;
+  top: -150%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+  padding-top: calc(25% - 0.5em);
+}
+.container header .title-bar #week-holder:hover::after {
+  display: block;
+}
+.container header #filter-area {
+  margin: 20px 30px;
+  padding-bottom: 10px;
+}
+.container header #filter-area #search-controls input {
+  width: 250px;
+  height: 35px;
+  outline-color: lightskyblue;
+  font-size: 20px;
+  border: none;
+  text-indent: 7px;
+}
+.container header #filter-area #search-controls button {
+  margin-left: 5px;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  background: brown;
+}
+.container header #filter-area #search-controls button svg {
+  color: white;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: calc(50% - 10px);
+}
+.container header #filter-area #select-controls {
+  margin-top: 10px;
+}
+.container header #filter-area #select-controls select {
+  width: 25%;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: darkblue;
+  border: none;
+  outline: lightskyblue;
+}
+.container header #filter-area #select-controls select option {
+  text-align: end;
+}
+.container main {
+  margin-top: 10px;
+  width: 85%;
+  background: white;
+}
+.container main #results-list {
+  width: 100%;
+  background: white;
+  margin-top: 0;
+  list-style: none;
+  display: block;
+  padding: 15px 30px;
+}
+.container main #results-list .schedule-record {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  background: #b44848;
+  width: fit-content;
+  height: 60px;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.container main #results-list .schedule-record .date-field, .container main #results-list .schedule-record .time-field, .container main #results-list .schedule-record .subject-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 15px;
+  flex-wrap: nowrap;
+}
+.container main #results-list .schedule-record .subject-field .teachers-info {
+  font-style: italic;
+}
+.container main #results-list .schedule-record .place-field {
+  background: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+}
+.container main #results-list .schedule-record .place-field span {
+  height: fit-content;
+  width: fit-content;
+  font-size: 12px;
+  transform: rotate(-90deg);
+}
+.container main #results-list .explanation {
+  position: relative;
+  left: 8px;
+  display: flex;
+  flex-direction: column;
+  background: wheat;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  max-height: 0;
+  overflow: hidden;
+}
+.container main #results-list .explanation h1 {
+  margin: 0;
+}
+.container main #results-list .explanation .explanation-pair {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 10px;
+}
+.container main #results-list .explanation .explanation-pair .property {
+  color: red;
+  text-align: left;
+}
+.container main #results-list .explanation .explanation-pair .value {
+  color: green;
+  text-align: right;
+}
+
+/*# sourceMappingURL=mainPageStyle.css.map */

@@ -1,0 +1,79 @@
+body {
+  background: red;
+}
+
+.container {
+  background-color: lightgrey;
+  width: 550px;
+  min-height: 250px;
+  padding: 30px 20px;
+  position: absolute;
+  left: calc(50% - 275px);
+  border-radius: 8px;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+}
+.container #search-area {
+  display: flex;
+}
+.container #search-area input {
+  width: 250px;
+  height: 35px;
+  outline-color: lightskyblue;
+  font-size: 20px;
+  border: none;
+  text-indent: 7px;
+}
+.container #search-area button {
+  margin-left: 5px;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  background: brown;
+}
+.container #search-area button svg {
+  color: white;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: calc(50% - 10px);
+}
+
+#results-area {
+  margin-top: 10px;
+  background: white;
+  padding: 30px 20px;
+}
+#results-area .results-title {
+  color: white;
+  background: brown;
+  width: 60%;
+  font-size: 24px;
+  font-weight: bold;
+  text-indent: 10px;
+  display: none;
+}
+#results-area .results-list {
+  width: 60%;
+  background: gray;
+  margin-top: 10px;
+  list-style: none;
+  padding-left: 15px;
+  padding-top: 20px;
+  display: none;
+}
+#results-area .results-list li {
+  color: white;
+  font-size: 18px;
+  margin-top: 5px;
+}
+#results-area #load-all {
+  background: lightgreen;
+  width: 180px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  display: none;
+}
+
+/*# sourceMappingURL=searchPageStyle.css.map */

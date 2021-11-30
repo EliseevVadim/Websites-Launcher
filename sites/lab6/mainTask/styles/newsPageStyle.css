@@ -1,0 +1,207 @@
+body {
+  background: lightseagreen;
+}
+
+.container {
+  background-color: lightgrey;
+  width: 550px;
+  min-height: 250px;
+  padding: 30px 20px;
+  position: absolute;
+  left: calc(50% - 275px);
+  border-radius: 8px;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+}
+.container header {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.container header h1 {
+  margin: 0;
+  color: brown;
+  text-transform: uppercase;
+}
+.container main {
+  min-height: 200px;
+}
+.container main .news-card {
+  margin: 10px auto;
+  background: white;
+  width: 500px;
+  min-height: 100px;
+}
+.container main .news-card .news-title {
+  position: relative;
+  max-width: 300px;
+  height: 40px;
+  background: #b77a4d;
+  padding: 7px 40px;
+  color: white;
+  font-size: 24px;
+  box-sizing: border-box;
+}
+.container main .news-card img {
+  margin-top: 10px;
+}
+.container main .news-card p {
+  margin: 10px;
+  color: #440d0d;
+  font-style: italic;
+  font-size: 20px;
+}
+.container main .news-card a {
+  display: block;
+  font-size: 22px;
+  color: firebrick;
+  font-style: italic;
+  text-align: end !important;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+.container #modal-window-container {
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+}
+.container #modal-window-container #show-button {
+  margin: 0 auto;
+  background: blue;
+  color: white;
+  width: 200px;
+  height: 70px;
+  font-size: 20px;
+  border: 1px solid green;
+  border-radius: 60px 60px 60px 60px/80% 80%;
+  cursor: pointer;
+}
+.container #modal-window-container #modal-area {
+  position: absolute;
+  visibility: hidden;
+  text-align: center;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+.container #modal-window-container #modal-area #modal-window {
+  position: relative;
+  top: 15%;
+  width: 60%;
+  height: 80%;
+  background: white;
+  box-shadow: 0 5px 15px black;
+}
+.container #modal-window-container #modal-area #modal-window header {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8%;
+  background: brown;
+}
+.container #modal-window-container #modal-area #modal-window header .title {
+  position: relative;
+  color: white;
+  margin: 0 auto;
+  font-size: 24px;
+  top: calc(50% - 0.5em);
+}
+.container #modal-window-container #modal-area #modal-window header #close-button {
+  width: 32px;
+  height: 100%;
+  text-align: center;
+}
+.container #modal-window-container #modal-area #modal-window header #close-button svg {
+  position: relative;
+  top: calc(50% - 15px);
+  color: white;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+.container #modal-window-container #modal-area #modal-window header #close-button svg:hover {
+  color: gray;
+}
+.container #modal-window-container #modal-area #modal-window main {
+  margin: 0 auto;
+  position: relative;
+  top: 15%;
+  width: 80%;
+  max-height: 80%;
+  background: lightseagreen;
+  border-radius: 3px;
+  overflow-y: scroll;
+}
+.container #modal-window-container #modal-area #modal-window main h1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.container #modal-window-container #modal-area #modal-window main h2 {
+  color: firebrick;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.container #modal-window-container #modal-area #modal-window main img {
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.container #modal-window-container #modal-area[rel=active] {
+  visibility: visible;
+  opacity: 1;
+  position: fixed;
+}
+.container footer #search-area {
+  display: flex;
+  margin: 25px;
+}
+.container footer #search-area input {
+  width: 250px;
+  height: 35px;
+  outline-color: lightskyblue;
+  font-size: 16px;
+  border: none;
+  text-indent: 7px;
+}
+.container footer #search-area button {
+  margin-left: 5px;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  background: brown;
+}
+.container footer #search-area button svg {
+  color: white;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: calc(50% - 10px);
+}
+.container footer nav {
+  display: flex;
+  margin-left: 25px;
+  background: white;
+  width: fit-content;
+}
+.container footer nav button {
+  margin-right: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  background: darkgrey;
+  font-size: 20px;
+}
+.container footer nav .disabled-button {
+  pointer-events: none;
+  background: black;
+  color: darkgrey;
+}
+
+/*# sourceMappingURL=newsPageStyle.css.map */

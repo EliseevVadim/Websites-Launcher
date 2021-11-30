@@ -1,0 +1,28 @@
+html, body {
+  background: wheat;
+}
+
+header #menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+header #menu ul li.menu-item {
+  margin: 10px;
+  display: table-cell;
+  width: 220px;
+  height: 50px;
+  background: green;
+  text-align: center;
+  cursor: pointer;
+}
+header #menu ul li.menu-item a {
+  position: relative;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bolder;
+  top: calc(50% - 0.5em);
+}
+
+/*# sourceMappingURL=mainPageStyle.css.map */
