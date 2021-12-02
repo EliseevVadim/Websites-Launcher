@@ -77,7 +77,7 @@ function isHighWeek () {
     let currentDate = new Date();
     let pivot = new Date(currentDate.getFullYear(),7,30); // понедельник перед началом учебного года
     let numberOfDays = Math.floor((currentDate - pivot) / (24 * 60 * 60 * 1000));
-    let result = Math.ceil(( currentDate.getDay() + 1 + numberOfDays) / 7);
+    let result = Math.ceil((numberOfDays) / 7);
     weekNumber = result;
     return result % 2 === 1;
 }

@@ -1,7 +1,11 @@
 let button = document.getElementById('search-button');
 let inputField = document.getElementById('search-field');
 let resultsList = $('.results-list')[0];
+let loadStep;
 let data = [];
+
+const recordsPerStep = 10;
+let needAll = false;
 
 button.onclick = function () {
     if (inputField.value.length !== 0) {
@@ -14,33 +18,43 @@ button.onclick = function () {
             })
             .then((json) => {
                 data = json.data.filter(item => item.toLowerCase().includes(inputField.value.toLowerCase()));
-                if (data.length > 0) {
-                    setElementsVisibility('block');
-                    if (data.length > 10) {
-                        for (let i = 0; i < 10; i++) {
-                            resultsList.innerHTML += `<li>${data[i]}</li>`;
-                        }
-                        $('#load-all').css('display', 'block');
-                    }
-                    else {
-                        for (let i = 0; i < data.length; i++) {
-                            resultsList.innerHTML += `<li>${data[i]}</li>`;
-                        }
-                    }
+                if (data.length === 0) {
+                    alert("Ничего не найдено");
+                    return;
                 }
-                else {
-                    alert('Ничего не найдено')
-                }
+                setElementsVisibility('block');
+                loadStep = 1;
+                console.log(data.length)
+                loadOnStep();
             })
     }
 }
 
-function loadAll() {
-    $('#load-all').css('display', 'none');
-    for (let  i = 10; i < data.length; i++) {
-        resultsList.innerHTML += `<li>${data[i]}</li>`
+function displayRecords(count, isNeeded) {
+    console.log(count);
+    let lowerBound = (loadStep - 1) * recordsPerStep;
+    let upperBound = isNeeded ? data.length : (loadStep * recordsPerStep);
+    for (let i = lowerBound; i < upperBound; i++) {
+        resultsList.innerHTML += `<li>${data[i]}</li>`;
     }
+    return new Promise(function (resolve, reject) {
+        return isNeeded ? reject() : resolve();
+    });
 }
+
+function loadAll() {
+    loadOnStep();
+}
+
+function loadOnStep() {
+    needAll = loadStep * recordsPerStep > data.length;
+    displayRecords(needAll ? data.length : recordsPerStep, needAll).then((data) => {
+        loadStep++;
+        $('#load-all').css('display', 'block');
+    }).catch(() => {
+        $('#load-all').css('display', 'none');
+    })
+} 
 
 function setElementsVisibility(visibility) {
     $('.results-list').css('display', visibility);
