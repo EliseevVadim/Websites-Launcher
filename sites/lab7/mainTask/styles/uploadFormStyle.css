@@ -1,0 +1,59 @@
+body {
+  background: #1283da;
+}
+body .container {
+  background-color: lightgrey;
+  width: 550px;
+  min-height: 250px;
+  padding: 30px 20px;
+  position: absolute;
+  left: calc(50% - 275px);
+  border-radius: 8px;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+}
+body .container #upload {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+body .container #upload input {
+  display: block;
+  width: 65%;
+  height: 45px;
+  margin-left: 20%;
+  margin-top: 10%;
+  line-height: 50px;
+  text-align: center;
+  background: #1172c2;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body .container #upload #result-area {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+body .container #upload #result-area .info-record {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+body .container #upload #result-area .info-record span {
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+  color: indigo;
+}
+body .container #upload #result-area .info-record span.value {
+  font-size: 16px;
+  color: green;
+  line-height: 22px;
+}
+
+/*# sourceMappingURL=uploadFormStyle.css.map */

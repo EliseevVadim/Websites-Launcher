@@ -1,0 +1,61 @@
+body {
+  background: black;
+  color: white;
+}
+h1 {
+  margin: 0 auto;
+  text-align: center;
+}
+form {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  .hintedBlock {
+    display: flex;
+    flex-direction: column;
+    #buttons-area {
+      display: flex;
+      input[type="submit"] {
+        margin: 0 5px;
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+        background: green;
+        color: white;
+        cursor: pointer;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        line-height: calc(36px - 0.5em);
+        padding-right: 2em;
+        box-sizing: border-box;
+      }
+    }
+  }
+  input {
+    height: 30px;
+    width: 200px;
+    text-indent: 10px;
+    font-size: 20px;
+    outline-color: darkblue;
+  }
+  #calculate-button {
+    margin: 30px;
+    width: 500px;
+    height: 35px;
+    font-size: 22px;
+    cursor: pointer;
+    background: lightgreen;
+    border-radius: 15px;
+  }
+}
+#result-area {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  * {
+    margin: 10px;
+  }
+}

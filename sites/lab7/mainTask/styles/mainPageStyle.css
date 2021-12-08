@@ -1,0 +1,116 @@
+body {
+  background: lightskyblue;
+}
+
+form#task1 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+form#task1 h1 {
+  margin: 0;
+}
+form#task1 input {
+  margin: 5px auto;
+  width: 300px;
+  height: 30px;
+  display: inline;
+}
+form#task1 button {
+  width: 100px;
+  height: 30px;
+  margin: 5px auto;
+  cursor: pointer;
+  background: seagreen;
+  color: white;
+  border-radius: 5px;
+  outline: firebrick;
+}
+
+section#task2, section#task3, #task4, #task5 {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+section#task2 h1, section#task3 h1, #task4 h1, #task5 h1 {
+  margin: 0;
+}
+
+section#task3 ul, #task4 ul {
+  list-style: none;
+}
+
+#task6, #task7 {
+  margin-top: 30px;
+}
+#task6 h1, #task7 h1 {
+  margin: 0;
+  text-align: center;
+}
+#task6 h2, #task7 h2 {
+  color: rebeccapurple;
+}
+
+#task8, #task9 {
+  margin-top: 30px;
+}
+#task8 h1, #task9 h1 {
+  margin: 0;
+  text-align: center;
+}
+#task8 form, #task9 form {
+  display: flex;
+  flex-direction: column;
+}
+#task8 input, #task9 input {
+  width: 500px;
+  height: 34px;
+  outline: none;
+  font-size: 22px;
+  text-indent: 10px;
+}
+#task8 button, #task9 button {
+  margin-top: 10px;
+  width: 350px;
+  height: 30px;
+  background: yellow;
+  outline: green;
+  font-size: 18px;
+  color: darkblue;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#otherTasks {
+  margin-top: 50px;
+}
+#otherTasks h1 {
+  margin: 0;
+  text-align: center;
+}
+#otherTasks #menu ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+#otherTasks #menu ul li.menu-item {
+  display: table-cell;
+  width: fit-content;
+  box-sizing: border-box;
+  padding: 0 10px;
+  height: 50px;
+  background: green;
+  text-align: center;
+  cursor: pointer;
+}
+#otherTasks #menu ul li.menu-item a {
+  position: relative;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bolder;
+  top: calc(50% - 0.5em);
+}
+
+/*# sourceMappingURL=mainPageStyle.css.map */
