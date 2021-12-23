@@ -114,46 +114,6 @@
             }
         ?>
     </section>
-    <section id="task7">
-        <h1>Задание 7</h1>
-        <?php
-        $regions = array(
-            "Московская область" => array("Москва", "Зеленоград", "Клин"),
-            "Ленинградская область" => array("Санкт-Петербург", "Всеволожск", "Павловск", "Кронштадт"),
-            "Рязанская область" => array("Рязань", "Спасск-Рязанский", "Рыбное"),
-            "Донецкая область" => array("Харцызск", "Донецк", "Макеевка", "Шахтерск", "Зугрэс", "Енакиево", "Зуевка")
-        );
-
-        try {
-            $filtered = array_filter($regions, "hasFittedElements");
-            foreach ($filtered as $region => $cities) {
-                echo "<h2>$region:</h2>";
-                echo "<ul>";
-                foreach ($cities as $city) {
-                    if (mb_substr($city, 0, 1) === 'К')
-                        echo "<li>$city</li>";
-                }
-            echo "</ul>";
-            }
-        }
-        catch (Exception $exception) {
-
-        }
-        function hasFittedElements($region) : bool
-        {
-            try {
-                foreach ($region as $city) {
-                    if (mb_substr($city, 0, 1) === 'К')
-                        return true;
-                }
-                return false;
-            }
-            catch (Exception $exception) {
-                return false;
-           }
-        }
-        ?>
-    </section>
     <section id="task8">
         <h1>Задание 8</h1>
         <form method="post">
