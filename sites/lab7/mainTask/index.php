@@ -123,23 +123,34 @@
             "Рязанская область" => array("Рязань", "Спасск-Рязанский", "Рыбное"),
             "Донецкая область" => array("Харцызск", "Донецк", "Макеевка", "Шахтерск", "Зугрэс", "Енакиево", "Зуевка")
         );
-        $filtered = array_filter($regions, "hasFittedElements");
-        foreach ($filtered as $region => $cities) {
-            echo "<h2>$region:</h2>";
-            echo "<ul>";
-            foreach ($cities as $city) {
-                if (mb_substr($city, 0, 1) === 'К')
-                    echo "<li>$city</li>";
-            }
+
+        try {
+            $filtered = array_filter($regions, "hasFittedElements");
+            foreach ($filtered as $region => $cities) {
+                echo "<h2>$region:</h2>";
+                echo "<ul>";
+                foreach ($cities as $city) {
+                    if (mb_substr($city, 0, 1) === 'К')
+                        echo "<li>$city</li>";
+                }
             echo "</ul>";
-        }
-        function hasFittedElements($region): bool
-        {
-            foreach ($region as $city) {
-                if (mb_substr($city, 0, 1) === 'К')
-                    return true;
             }
-            return false;
+        }
+        catch (Exception $exception) {
+
+        }
+        function hasFittedElements($region) : bool
+        {
+            try {
+                foreach ($region as $city) {
+                    if (mb_substr($city, 0, 1) === 'К')
+                        return true;
+                }
+                return false;
+            }
+            catch (Exception $exception) {
+                return false;
+           }
         }
         ?>
     </section>
